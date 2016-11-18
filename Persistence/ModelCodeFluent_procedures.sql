@@ -1,4 +1,4 @@
-﻿/* CodeFluent Generated Friday, 18 November 2016 16:19. TargetVersion:Default. Culture:en-US. UiCulture:en-US. Encoding:utf-8 (http://www.softfluent.com) */
+﻿/* CodeFluent Generated Friday, 18 November 2016 21:21. TargetVersion:Default. Culture:en-US. UiCulture:en-US. Encoding:utf-8 (http://www.softfluent.com) */
 set quoted_identifier OFF
 GO
 IF EXISTS (SELECT * FROM [dbo].[sysobjects] WHERE id = object_id(N'[dbo].[Vehicle_Delete]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)

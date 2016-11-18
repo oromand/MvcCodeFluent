@@ -1,4 +1,4 @@
-﻿/* CodeFluent Generated Friday, 18 November 2016 16:19. TargetVersion:Default. Culture:fr-FR. UiCulture:en-US. Encoding:utf-8 (http://www.softfluent.com) */
+﻿/* CodeFluent Generated Friday, 18 November 2016 21:21. TargetVersion:Default. Culture:fr-FR. UiCulture:fr-FR. Encoding:utf-8 (http://www.softfluent.com) */
 set quoted_identifier OFF
 GO
 IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME = 'vVehicle' AND TABLE_SCHEMA = 'dbo')

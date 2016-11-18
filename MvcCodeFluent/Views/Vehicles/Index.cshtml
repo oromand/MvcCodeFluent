@@ -13,19 +13,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.RaisePropertyChangedEvents)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EntityKey)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.RowVersion)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Brand)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EntityState)
         </th>
         <th></th>
     </tr>
@@ -33,19 +21,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.RaisePropertyChangedEvents)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EntityKey)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RowVersion)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Brand)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EntityState)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.VehicleId }) |

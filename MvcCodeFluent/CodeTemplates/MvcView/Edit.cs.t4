@@ -93,7 +93,8 @@ if (ReferenceScriptLibraries) {
     }
 #>
 <#
-foreach (PropertyMetadata property in ModelMetadata.Properties) {
+IEnumerable<PropertyMetadata> properties = FilteredCfeProperties(ModelMetadata.Properties);
+foreach (PropertyMetadata property in properties) {
     if (property.Scaffold && !property.IsAssociation) {
         if (property.IsPrimaryKey) {
 #>

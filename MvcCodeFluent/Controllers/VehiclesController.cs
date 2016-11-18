@@ -1,8 +1,13 @@
-﻿using ModelCodeFluent;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Web;
 using System.Web.Mvc;
+using ModelCodeFluent;
+using MvcCodeFluent.Models;
 
 //IXCYS--
 namespace MvcCodeFluent.Controllers
@@ -13,17 +18,17 @@ namespace MvcCodeFluent.Controllers
         // GET: Vehicles
         public ActionResult Index()
         {
-            return View(db.Vehicles.ToList());
+            return View(VehicleCollection.LoadAll());
         }
 
         // GET: Vehicles/Details/5
-        public ActionResult Details(Guid id)
+        public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vehicle vehicle = Vehicle.Load(id);
+            Vehicle vehicle = Vehicle.Load((System.Guid)id);
             if (vehicle == null)
             {
                 return HttpNotFound();
@@ -61,7 +66,7 @@ namespace MvcCodeFluent.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vehicle vehicle = Vehicle.Load(id);
+            Vehicle vehicle = Vehicle.Load((System.Guid)id);
             if (vehicle == null)
             {
                 return HttpNotFound();
@@ -91,7 +96,7 @@ namespace MvcCodeFluent.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Vehicle vehicle = Vehicle.Load(id);
+            Vehicle vehicle = Vehicle.Load((System.Guid)id);
             if (vehicle == null)
             {
                 return HttpNotFound();

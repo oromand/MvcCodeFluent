@@ -7,11 +7,11 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-// CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 16:19. Build: 1.0.61214.0841
+// CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 21:21. Build: 1.0.61214.0842
 namespace ModelCodeFluent.Web
 {
 	
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("CodeFluent Entities", "1.0.61214.0841")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("CodeFluent Entities", "1.0.61214.0842")]
     public partial class ModelCodeFluentBitsServer: CodeFluent.Runtime.BinaryServices.BitsServer
     {
 		private static ModelCodeFluentBitsServer _current;

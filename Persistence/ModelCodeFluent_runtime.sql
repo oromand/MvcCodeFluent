@@ -1,4 +1,4 @@
-﻿/* CodeFluent Generated Friday, 18 November 2016 16:19. TargetVersion:Default. Culture:fr-FR. UiCulture:en-US. Encoding:utf-8 (http://www.softfluent.com) */
+﻿/* CodeFluent Generated Friday, 18 November 2016 21:21. TargetVersion:Default. Culture:fr-FR. UiCulture:fr-FR. Encoding:utf-8 (http://www.softfluent.com) */
 set quoted_identifier OFF
 GO
 
@@ -54,7 +54,7 @@ DROP FUNCTION [dbo].[cf_modelVersion]
 GO
 CREATE FUNCTION [dbo].[cf_modelVersion]() RETURNS int AS
 BEGIN
-  RETURN 309555184
+  RETURN -410819186
 END
 GO
 

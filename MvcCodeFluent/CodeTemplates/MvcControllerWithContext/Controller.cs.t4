@@ -115,7 +115,7 @@ namespace <#= Namespace #>
 <# if (UseAsync) { #>
             <#= ModelTypeName #> <#= ModelVariable #> = await db.<#= entitySetName #>.FindAsync(id);
 <# } else { #>
-            <#= ModelTypeName #> <#= ModelVariable #> = <#= ModelTypeName #>.Load(id);
+            <#= ModelTypeName #> <#= ModelVariable #> = <#= ModelTypeName #>.Load((<#= primaryKeyType #>)id);
 <# } #>
             if (<#= ModelVariable #> == null)
             {
@@ -170,7 +170,7 @@ namespace <#= Namespace #>
 <# if (UseAsync) { #>
         public async Task<ActionResult> Edit(<#= primaryKeyNullableTypeName #> id)
 <# } else { #>
-        public ActionResult Edit(<#= primaryKeyNullableTypeName #> id)
+        public ActionResult Edit((<#= primaryKeyNullableTypeName #>) id)
 <# } #>
         {
             if (id == null)
@@ -180,7 +180,7 @@ namespace <#= Namespace #>
 <# if (UseAsync) { #>
             <#= ModelTypeName #> <#= ModelVariable #> = await db.<#= entitySetName #>.FindAsync(id);
 <# } else { #>
-            <#= ModelTypeName #> <#= ModelVariable #> = <#= ModelTypeName #>.Load(id);
+            <#= ModelTypeName #> <#= ModelVariable #> = <#= ModelTypeName #>.Load(<#= primaryKeyType #>id);
 <# } #>
             if (<#= ModelVariable #> == null)
             {
@@ -235,7 +235,7 @@ namespace <#= Namespace #>
 <# if (UseAsync) { #>
             <#= ModelTypeName #> <#= ModelVariable #> = await db.<#= entitySetName #>.FindAsync(id);
 <# } else { #>
-            <#= ModelTypeName #> <#= ModelVariable #> = <#= ModelTypeName #>.Load(id);
+            <#= ModelTypeName #> <#= ModelVariable #> = <#= ModelTypeName #>.Load((<#= primaryKeyType #>)id);
 <# } #>
             if (<#= ModelVariable #> == null)
             {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCodeFluent", "MvcCodeFluent\MvcCodeFluent.csproj", "{26436D4F-6376-4AAE-B02A-40938F50DEEC}"
 EndProject
@@ -9,7 +9,7 @@ Project("{00000005-0004-0000-0000-000000C0DEF1}") = "ModelCodeFluent", "ModelCod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{65721141-B357-4276-A63D-B8E06005FB5D}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Persistence", "Persistence\Persistence.sqlproj", "{E10DDE83-65BC-475A-B28D-38BA953FED0A}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Persistence", "Persistence\Persistence.sqlproj", "{AB2C20A8-720C-47C0-88C7-378E7176C4CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,18 +42,18 @@ Global
 		{65721141-B357-4276-A63D-B8E06005FB5D}.Release|.NET.Build.0 = Release|Any CPU
 		{65721141-B357-4276-A63D-B8E06005FB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65721141-B357-4276-A63D-B8E06005FB5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Debug|.NET.Build.0 = Debug|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Debug|.NET.Deploy.0 = Debug|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Release|.NET.ActiveCfg = Release|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Release|.NET.Build.0 = Release|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Release|.NET.Deploy.0 = Release|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E10DDE83-65BC-475A-B28D-38BA953FED0A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Debug|.NET.Build.0 = Debug|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Debug|.NET.Deploy.0 = Debug|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Release|.NET.ActiveCfg = Release|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Release|.NET.Build.0 = Release|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Release|.NET.Deploy.0 = Release|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2C20A8-720C-47C0-88C7-378E7176C4CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
