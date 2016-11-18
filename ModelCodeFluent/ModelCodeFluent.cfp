@@ -1,0 +1,13 @@
+﻿<cf:project defaultNamespace="ModelCodeFluent" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" xmlns:cfx="http://www.softfluent.com/codefluent/modeler/2008/1" xmlns:cfom="http://www.softfluent.com/codefluent/producers.model/2005/1" xmlns:cfps="http://www.softfluent.com/codefluent/producers.sqlserver/2005/1" createDefaultMethodForms="true" createDefaultApplication="false" createDefaultHints="false">
+  <cf:import path="Default.Surface.cfp" />
+  <cf:entity name="Vehicle" namespace="ModelCodeFluent" categoryPath="/ModelCodeFluent">
+    <cf:property name="VehicleId" key="true" />
+    <cf:property name="Brand" />
+  </cf:entity>
+  <cf:producer name="Business Object Model (BOM)" typeName="CodeFluent.Producers.CodeDom.CodeDomProducer, CodeFluent.Producers.CodeDom">
+    <cf:configuration compileWithVisualStudio="true" compile="false" codeDomProviderTypeName="CSharp" targetDirectory="..\Model" cfx:targetProject="..\Model\Model.csproj" cfx:targetProjectLayout="Update" />
+  </cf:producer>
+  <cf:producer name="SQL Server" typeName="CodeFluent.Producers.SqlServer.SqlServerProducer, CodeFluent.Producers.SqlServer">
+    <cf:configuration produceViews="true" targetDirectory="..\Persistence" cfx:targetProject="..\Persistence\Persistence.sqlproj" cfx:targetProjectLayout="Update, DontRemove" />
+  </cf:producer>
+</cf:project>

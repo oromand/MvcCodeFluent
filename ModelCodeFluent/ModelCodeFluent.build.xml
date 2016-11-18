@@ -1,0 +1,351 @@
+<build startDate="2016-11-18T15:48:26.8380+01:00" commandLine="&quot;C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe&quot; &quot;C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\ModelCodeFluent\ModelCodeFluent.cfp&quot; /Log:&quot;C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\ModelCodeFluent\ModelCodeFluent.build.xml&quot; /hostpid:15484 /Results:&quot;C:\Users\Olivier\AppData\Local\Temp\ModelCodeFluent.cfp.oop&quot; /DoNotCreateReportsOnException /DoNotShowReportsOnException /NoFlashOnError " machineName="IXCYSDEV13-PC" osVersion="Microsoft Windows NT 6.2.9200.0" currentDirectory="C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\ModelCodeFluent" user="IXCYSDEV13-PC\Olivier" clrVersion="4.0.30319.42000" licenseUsage="Build Expirable [Date:31/12/2099 00:00:00][Licensee:oliv.rm@gmail.com]" processorCount="8" workingSet="24252416 bytes" bitness="32bits" wow64="True" optionsFlags="None" parentProcess="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" endDate="2016-11-18T15:48:39.5633+01:00" totalElapsedTime="00:00:12.7253036" numberOfEntities="1" numberOfEnumerations="0" numberOfRelations="0">
+  <assemblies>
+    <assembly fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/mscorlib.dll" location="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="CodeFluent.Build4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Build4.exe" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="CodeFluent.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Model.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Model.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="CodeFluent.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="CodeFluent.Model.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Model.Common.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Model.Common.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="CodeFluent.Producers.CodeDom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.CodeDom.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.CodeDom.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="SoftFluent.License, Version=1.0.0.0, Culture=neutral, PublicKeyToken=330d9b6ea5e30055" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/SoftFluent.License.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\SoftFluent.License.dll" buildVersion="1.0.0.0" fileVersion="3.0.0.0" productVersion="1.0.0.0" />
+    <assembly fullName="System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="CodeFluent.Producers.SqlServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.SqlServer.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.SqlServer.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="CodeFluent.Runtime.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Database.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Database.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="CodeFluent.Runtime.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Web.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Web.dll" buildVersion="1.0.61214.0841" fileVersion="1.0.61214.0841" productVersion="1.0.61214.0841" />
+    <assembly fullName="CF_25311015811463814236.tplcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" codeBase="file:///C:/Users/Olivier/AppData/Local/Temp/CFTemplating.Temp4.0.30319.42000/70841/CF_25311015811463814236.tplcs.dll" location="C:\Users\Olivier\AppData\Local\Temp\CFTemplating.Temp4.0.30319.42000\70841\CF_25311015811463814236.tplcs.dll" fileVersion="0.0.0.0" productVersion="0.0.0.0" />
+    <assembly fullName="System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_32/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Caching/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Caching.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0" productVersion="4.6.1586.0" />
+    <assembly fullName="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Numerics/v4.0_4.0.0.0__b77a5c561934e089/System.Numerics.dll" location="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll" buildVersion="4.6.1586.0" fileVersion="4.6.1586.0 built by: NETFXREL2" productVersion="4.6.1586.0" />
+  </assemblies>
+  <variables>
+    <variable name="CF_TEMPLATES_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\Templates" />
+    <variable name="CF_BUILD_NUMBER" value="70841" />
+    <variable name="CF_DEFAULT_PERSISTENCE_SERVER" value="127.0.0.1" />
+    <variable name="CF_PATTERNS_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\Patterns" />
+    <variable name="CF_CURRENT_PATH" value="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler" />
+    <variable name="CF_BUILD_CONFIGURATION" value="RELEASE" />
+  </variables>
+  <generatedFiles>
+    <producer name="Business Object Model (BOM)" generatedFilesCount="6" />
+    <producer name="SQL Server" generatedFilesCount="8" />
+  </generatedFiles>
+  <project>
+    <imports>
+      <cf:import path="Default.Surface.cfp" xmlns:cf="http://www.softfluent.com/codefluent/2005/1" />
+    </imports>
+    <parts>
+      <part filePath="C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\ModelCodeFluent\ModelCodeFluent.cfp" isRootModel="true" relativePath="ModelCodeFluent.cfp" />
+      <part filePath="C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\ModelCodeFluent\Default.Surface.cfp" relativePath="Default.Surface.cfp" />
+    </parts>
+  </project>
+  <producer name="Business Object Model (BOM)">
+    <event type="ProducerStart" elapsedTime="00:00:00.0002040">
+      <name>Business Object Model (BOM)</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ParameterValue" name="AllowExternalCode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AllowSnippets" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ApplicationName" value="default" />
+    <event type="ParameterValue" name="DumpPath" />
+    <event type="ParameterValue" name="FileCopyFilter" value="*.scc, _cf_md.config" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model" />
+    <event type="ParameterValue" name="IsTargetRelativeToModelDirectory" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ModelProducerName" />
+    <event type="ParameterValue" name="MustCopyModelFiles" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSkipFileCopyOnError" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="OutputEncoding" value="utf-8" />
+    <event type="ParameterValue" name="OutputEncodingEmitIdentifier" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ProductionFlags" value="Default, Overwrite" valueType="CodeFluent.Model.ProductionFlags" />
+    <event type="ParameterValue" name="ProductionVerbosity" value="0" valueType="System.Int32" />
+    <event type="ParameterValue" name="SkipExtensions" value="[^\.]*.scc,_cf_md.config" valueType="System.Collections.ArrayList" />
+    <event type="ParameterValue" name="SkipDirectoryExtensions" valueType="System.Collections.ArrayList" />
+    <event type="ParameterValue" name="TargetFramework" value="4.6" />
+    <event type="ParameterValue" name="TargetBaseNamespace" value="ModelCodeFluent" />
+    <event type="ParameterValue" name="TemplateOptions" value="Default" valueType="CodeFluent.Model.Common.Templating.TemplateOptions" />
+    <event type="ParameterValue" name="UseEmptyApplication" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AssemblyCompileDefaultFileExcludeFilter" value="AssemblyInfo.cs, assemblyversion.cs" />
+    <event type="ParameterValue" name="CodeDomProviderOptions" />
+    <event type="ParameterValue" name="FileExtension" value=".cs" />
+    <event type="ParameterValue" name="LanguageCode" value="CSharp" valueType="CodeFluent.Model.Code.LanguageCode" />
+    <event type="ParameterValue" name="MustAddDebugInfo" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCompile" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustDelaySign" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustIncludeDebugInformation" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustTreatWarningAsErrors" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="WarningLevel" value="-1" valueType="System.Int32" />
+    <event type="ParameterValue" name="TargetProductionOptions" value="Default" valueType="CodeFluent.Producers.CodeDom.TargetProductionOptions" />
+    <event type="ParameterValue" name="VisualStudioProjectPath" />
+    <event type="ParameterValue" name="IsAssemblyClsCompliant" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddDebuggerDisplayAttribute" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddDictionaryMethods" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddRuntimeDesignAttributes" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAddRuntimeResourceCheck" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustAppendSchema" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustEmbedModelInRuntimeResource" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceResourcesFiles" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebBasicAuthenticationModule" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebHandler" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebMembershipProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebMembershipUser" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebProfileProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebRoleProvider" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceBitsServer" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceWebTypes" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyStringArrayMode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ResourceFileFormat" value="ResX" valueType="CodeFluent.Producers.CodeDom.ResourceFileFormat" />
+    <event type="ParameterValue" name="RuntimePrefix" value="_cf_rt" />
+    <event type="ParameterValue" name="RuntimeResourceBaseName" value="ModelCodeFluent.ModelCodeFluent" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model" />
+    <event type="FileWrite" elapsedTime="00:00:00.5506106">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\_cf_rt.cs</path>
+      <fileType>RuntimeCode</fileType>
+      <size>-1</size>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0184169">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\_cf_rt.cs</path>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0177111">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\_cf_rt.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0117495">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\ModelCodeFluent.ResX</path>
+      <fileType>Embedded resource for Invariant Language (Invariant Country) culture</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0093316">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\ModelCodeFluent.ResX</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0341176">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Vehicle.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Vehicle'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0054946">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Vehicle.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0215375">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\VehicleCollection.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.VehicleCollection'</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0035547">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\VehicleCollection.cs</path>
+    </event>
+    <event type="DirectoryCreate" elapsedTime="00:00:00.0042886">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Web</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0272188">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Web\HttpHandler.cs</path>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0033554">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Web\HttpHandler.cs</path>
+    </event>
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.MembershipProviderProducer: No directoryUser entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.RoleProviderProducer: No directoryRole entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.ProfileProviderProducer: No directoryUser entity. Skip production." />
+    <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.BasicAuthenticationModuleProducer: No directoryUser entity. Skip production." />
+    <event type="FileWrite" elapsedTime="00:00:00.0858233">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Web\BitsServer.cs</path>
+      <fileType>CodeFluent.Producers.CodeDom.UI.Web.BitsServerProducer</fileType>
+      <size>-1</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0045594">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Model\Web\BitsServer.cs</path>
+    </event>
+  </producer>
+  <producer name="SQL Server">
+    <event type="ProducerStart" elapsedTime="00:00:00.0075730">
+      <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ParameterValue" name="AllowSelectDistinct" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="AppendSchemaToProcedures" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="CommandTimeout" value="0" valueType="System.Int32" />
+    <event type="ParameterValue" name="ConnectionString" value="Application Name=ModelCodeFluent;server=127.0.0.1;database=ModelCodeFluent;Integrated Security=true" />
+    <event type="ParameterValue" name="CurrentCulture" value="fr-FR" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="CurrentUICulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="DecimalPrecision" value="28" valueType="System.Int32" />
+    <event type="ParameterValue" name="DecimalScale" value="13" valueType="System.Int32" />
+    <event type="ParameterValue" name="DefaultUnicodeInstancePrefix" value="N" />
+    <event type="ParameterValue" name="FullTargetDirectory" value="C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence" />
+    <event type="ParameterValue" name="IdentityIncrement" value="1" valueType="System.Int32" />
+    <event type="ParameterValue" name="IdentitySeed" value="1" valueType="System.Int32" />
+    <event type="ParameterValue" name="IdentityTempColumnName" value="_cf_id_temp" />
+    <event type="ParameterValue" name="InstanceProductionCulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="IsTargetRelativeToModelDirectory" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MaxColumnSize" value="2147483647" valueType="System.Int32" />
+    <event type="ParameterValue" name="MaximumColumnsPerConstraint" value="16" valueType="System.Int32" />
+    <event type="ParameterValue" name="MustCreateBackups" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCreateDatabase" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustCreateDiffs" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustDropUnusedColumns" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustForceColumnAlter" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceViews" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustProduceSchemas" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSaveInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSaveBlobInstances" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustSkipCrossStoreRelations" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateDatabase" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateProcedures" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateRuntime" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUpdateSchema" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustForceUpdateViews" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLocalTransactions" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyStringArrayMode" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="MustUseLegacyBlobChunkMode" value="False" valueType="System.Boolean" />
+    <event type="ParameterValue" name="OutputEncoding" value="utf-8" />
+    <event type="ParameterValue" name="OutputEncodingEmitIdentifier" value="True" valueType="System.Boolean" />
+    <event type="ParameterValue" name="ProcedureProductionCulture" value="en-US" valueType="System.Globalization.CultureInfo" />
+    <event type="ParameterValue" name="ProductionFlags" value="None" valueType="CodeFluent.Model.ProductionFlags" />
+    <event type="ParameterValue" name="ProductionOptionsFlags" value="None" valueType="CodeFluent.Model.ProductionOptionsFlags" />
+    <event type="ParameterValue" name="SaveUserName" value="SYSTEM_USER" />
+    <event type="ParameterValue" name="StoreName" />
+    <event type="ParameterValue" name="TargetVersion" value="Default" valueType="CodeFluent.Producers.SqlServer.TargetVersion" />
+    <event type="FileCopy" elapsedTime="00:00:00.0384840">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_runtime.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_runtime.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0051586">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_runtime.sql</path>
+      <fileType>RuntimeScript</fileType>
+      <size>1960</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000556">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_runtime.sql</path>
+    </event>
+    <event type="ParameterValue" name="SqlServerVersion" value="12.0.2269.0" />
+    <event type="FileCopy" elapsedTime="00:00:10.7406703">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_tables.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_tables.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0039854">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_tables.sql</path>
+      <fileType>TablesScript</fileType>
+      <size>1181</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000667">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_tables.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0250828">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_views.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_views.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0041327">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_views.sql</path>
+      <fileType>ViewsScript</fileType>
+      <size>614</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001267">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_views.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.1848094">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_table_diffs.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_table_diffs.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0029902">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_table_diffs.sql</path>
+      <fileType>TablesDiffsScript</fileType>
+      <size>1938</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001097">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_table_diffs.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0437244">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_procedures.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_procedures.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0040111">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_procedures.sql</path>
+      <fileType>ProceduresScript</fileType>
+      <size>4947</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001140">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_procedures.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0131544">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_drop.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_drop.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0034533">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_drop.sql</path>
+      <fileType>RelationsDropScript</fileType>
+      <size>192</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000947">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_drop.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0055171">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_add.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_add.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0039827">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_add.sql</path>
+      <fileType>RelationsAddScript</fileType>
+      <size>192</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000892">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_add.sql</path>
+    </event>
+    <event type="FileCopy" elapsedTime="00:00:00.0219508">
+      <target>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_instances.sql</target>
+      <source>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_instances.sql.tmp</source>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0028067">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_instances.sql</path>
+      <fileType>InstancesScript</fileType>
+      <size>266</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001298">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_instances.sql</path>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0040032">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_runtime.sql</path>
+      <fileType>RuntimeScript</fileType>
+      <size>1960</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0858106">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_drop.sql</path>
+      <fileType>RelationsDropScript</fileType>
+      <size>192</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0010638">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_table_diffs.sql</path>
+      <fileType>TablesDiffScript</fileType>
+      <size>1938</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0146146">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_views.sql</path>
+      <fileType>ViewsScript</fileType>
+      <size>614</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0133419">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_relations_add.sql</path>
+      <fileType>RelationsAddScript</fileType>
+      <size>192</size>
+    </event>
+    <event type="FileExecute" elapsedTime="00:00:00.0010654">
+      <path>C:\Users\Olivier\Documents\Visual Studio 2015\Projects\MvcCodeFluent\Persistence\ModelCodeFluent_procedures.sql</path>
+      <fileType>ProceduresScript</fileType>
+      <size>4947</size>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0315845">
+      <name>Business Object Model (BOM)</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0005202">
+      <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+  </producer>
+</build>
