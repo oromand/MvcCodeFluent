@@ -6,7 +6,7 @@ using System.Web;
 
 namespace MvcCodeFluent.Models
 {
-    public class MvcCodeFluentContext : DbContext
+    public class MvcContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -15,10 +15,10 @@ namespace MvcCodeFluent.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
-        public MvcCodeFluentContext() : base("name=MvcCodeFluentContext")
+        public MvcContext() : base("name=MvcContext")
         {
         }
 
-        public System.Data.Entity.DbSet<MvcCodeFluent.Models.Vehicle> Vehicles { get; set; }
+        public System.Data.Entity.DbSet<ModelCodeFluent.Vehicle> Vehicles { get; set; }
     }
 }

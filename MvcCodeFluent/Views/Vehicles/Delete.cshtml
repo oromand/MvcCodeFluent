@@ -1,4 +1,4 @@
-﻿@model MvcCodeFluent.Models.Vehicle
+﻿@model ModelCodeFluent.Vehicle
 
 @{
     ViewBag.Title = "Delete";
@@ -13,11 +13,43 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.RaisePropertyChangedEvents)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RaisePropertyChangedEvents)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntityKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntityKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RowVersion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RowVersion)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Brand)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntityState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntityState)
         </dd>
 
     </dl>

@@ -29,6 +29,5 @@ namespace MvcCodeFluent.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<MvcCodeFluent.Models.Vehicle> Vehicles { get; set; }
     }
 }

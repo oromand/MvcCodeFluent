@@ -14,7 +14,7 @@ namespace ModelCodeFluent
     using CodeFluent.Runtime.Utilities;
     
     
-    // CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 15:48.
+    // CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 16:19.
     // Build:1.0.61214.0841
     [System.CodeDom.Compiler.GeneratedCodeAttribute("CodeFluent Entities", "1.0.61214.0841")]
     [System.SerializableAttribute()]
