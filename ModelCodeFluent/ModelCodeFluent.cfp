@@ -8,7 +8,7 @@
     <cf:configuration compileWithVisualStudio="true" compile="false" codeDomProviderTypeName="CSharp" targetDirectory="..\Model" cfx:targetProject="..\Model\Model.csproj" cfx:targetProjectLayout="Update" />
   </cf:producer>
   <cf:producer name="SQL Server" typeName="CodeFluent.Producers.SqlServer.SqlServerProducer, CodeFluent.Producers.SqlServer">
-    <cf:configuration produceViews="true" targetDirectory="..\Persistence" cfx:targetProject="..\Persistence\Persistence.sqlproj" cfx:targetProjectLayout="Update, DontRemove" connectionString="Server=OLIVIER774B\SQLEXPRESS;Database=ModelCodeFluent;Integrated Security=true;Application Name=ModelCodeFluent" />
+    <cf:configuration produceViews="true" targetDirectory="..\Persistence" cfx:targetProject="..\Persistence\Persistence.sqlproj" cfx:targetProjectLayout="Update, DontRemove" />
   </cf:producer>
   <cf:producer name="Asp.Net Identity" typeName="SoftFluent.AspNetIdentity.AspNetIdentityProducer, SoftFluent.AspNetIdentity">
     <cf:configuration targetDirectory="..\Model" implementQueryableRoleStore="True" implementQueryableUserStore="True" cfx:targetProjectLayout="Update" />
