@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: CodeFluent.Runtime.Utilities.CodeFluentGeneratedAttribute("1.0.61214.0842", "CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 Novem" +
-    "ber 2016 21:21.", CodeFluent.Runtime.Utilities.CodeFluentGeneratedAttributeOptions.CompiledWithVisualStudio, 3884148110u)]
+[assembly: CodeFluent.Runtime.Utilities.CodeFluentGeneratedAttribute("1.0.61214.0842", "CodeFluent Entities generated (http://www.softfluent.com). Date: Saturday, 19 Nov" +
+    "ember 2016 13:35.", CodeFluent.Runtime.Utilities.CodeFluentGeneratedAttributeOptions.CompiledWithVisualStudio, 741553000u)]
 
 namespace ModelCodeFluent.Resources
 {
@@ -17,7 +17,7 @@ namespace ModelCodeFluent.Resources
     using CodeFluent.Runtime.Utilities;
     
     
-    // CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 21:21.
+    // CodeFluent Entities generated (http://www.softfluent.com). Date: Saturday, 19 November 2016 13:35.
     // Build:1.0.61214.0842
     [System.CodeDom.Compiler.GeneratedCodeAttribute("CodeFluent Entities", "1.0.61214.0842")]
     public sealed partial class Manager

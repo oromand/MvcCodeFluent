@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelCodeFluent
+namespace ModelCodeFluent.Identity
 {
     using CodeFluent.Runtime;
     using CodeFluent.Runtime.Utilities;
@@ -21,7 +21,7 @@ namespace ModelCodeFluent
     [System.ComponentModel.DataObjectAttribute()]
     [System.Diagnostics.DebuggerDisplayAttribute("Count={Count}")]
     [System.ComponentModel.TypeConverterAttribute(typeof(CodeFluent.Runtime.Design.CollectionTypeConverter))]
-    public partial class VehicleCollection : System.Collections.IList, System.Collections.ICollection, CodeFluent.Runtime.ICodeFluentSet, System.Collections.Generic.IList<ModelCodeFluent.Vehicle>, System.Collections.Generic.ICollection<ModelCodeFluent.Vehicle>, System.ComponentModel.IRaiseItemChangedEvents, System.ICloneable, System.ComponentModel.INotifyPropertyChanged, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.IBindingList, System.ComponentModel.ICancelAddNew
+    public partial class UserLoginCollection : System.Collections.IList, System.Collections.ICollection, CodeFluent.Runtime.ICodeFluentSet, System.Collections.Generic.IList<ModelCodeFluent.Identity.UserLogin>, System.Collections.Generic.ICollection<ModelCodeFluent.Identity.UserLogin>, System.ComponentModel.IRaiseItemChangedEvents, System.ICloneable, System.ComponentModel.INotifyPropertyChanged, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.IBindingList, System.ComponentModel.ICancelAddNew
     {
         
         private bool _raisePropertyChangedEvents = true;
@@ -29,10 +29,10 @@ namespace ModelCodeFluent
         private bool _raiseCollectionChangedEvents = true;
         
         [System.NonSerializedAttribute()]
-        private System.Collections.Generic.List<ModelCodeFluent.Vehicle> _baseList = new System.Collections.Generic.List<ModelCodeFluent.Vehicle>();
+        private System.Collections.Generic.List<ModelCodeFluent.Identity.UserLogin> _baseList = new System.Collections.Generic.List<ModelCodeFluent.Identity.UserLogin>();
         
         [System.NonSerializedAttribute()]
-        private System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Vehicle> _baseTable = new System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Vehicle>();
+        private System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Identity.UserLogin> _baseTable = new System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Identity.UserLogin>();
         
         [System.NonSerializedAttribute()]
         private System.Collections.Hashtable _relations = new System.Collections.Hashtable();
@@ -40,10 +40,13 @@ namespace ModelCodeFluent
         private int _maxCount = 2147483647;
         
         [System.NonSerializedAttribute()]
+        private ModelCodeFluent.Identity.User _loginsUserUser;
+        
+        [System.NonSerializedAttribute()]
         private int _addNewPos = -1;
         
         [System.NonSerializedAttribute()]
-        private CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Vehicle> _blm2933840664;
+        private CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Identity.UserLogin> _blm2262660159;
         
         private bool _raiseListChangedEvents = true;
         
@@ -51,9 +54,15 @@ namespace ModelCodeFluent
 
         event System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged{add{_h2943838991+=value;}remove{_h2943838991-=value;}}
         
-        public VehicleCollection()
+        public UserLoginCollection()
         {
-            this._blm2933840664 = new CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Vehicle>(this);
+            this._blm2262660159 = new CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Identity.UserLogin>(this);
+        }
+        
+        public UserLoginCollection(ModelCodeFluent.Identity.User loginsUserUser)
+        {
+            this._blm2262660159 = new CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Identity.UserLogin>(this);
+            this._loginsUserUser = loginsUserUser;
         }
         
         [System.ComponentModel.BrowsableAttribute(false)]
@@ -83,7 +92,7 @@ namespace ModelCodeFluent
         }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        protected System.Collections.Generic.List<ModelCodeFluent.Vehicle> BaseList
+        protected System.Collections.Generic.List<ModelCodeFluent.Identity.UserLogin> BaseList
         {
             get
             {
@@ -92,7 +101,7 @@ namespace ModelCodeFluent
         }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        protected System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Vehicle> BaseTable
+        protected System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Identity.UserLogin> BaseTable
         {
             get
             {
@@ -122,11 +131,20 @@ namespace ModelCodeFluent
             }
         }
         
-        public ModelCodeFluent.Vehicle this[int index]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ModelCodeFluent.Identity.User LoginsUserUser
         {
             get
             {
-                return ((ModelCodeFluent.Vehicle)(this.BaseList[index]));
+                return this._loginsUserUser;
+            }
+        }
+        
+        public ModelCodeFluent.Identity.UserLogin this[int index]
+        {
+            get
+            {
+                return ((ModelCodeFluent.Identity.UserLogin)(this.BaseList[index]));
             }
             set
             {
@@ -143,37 +161,37 @@ namespace ModelCodeFluent
             }
             set
             {
-                this.BaseList[index] = ((ModelCodeFluent.Vehicle)(value));
+                this.BaseList[index] = ((ModelCodeFluent.Identity.UserLogin)(value));
             }
         }
         
-        public ModelCodeFluent.Vehicle this[System.Guid vehicleId]
+        public ModelCodeFluent.Identity.UserLogin this[System.Guid id]
         {
             get
             {
-                if ((vehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+                if ((id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
                 {
-                    throw new System.ArgumentNullException("vehicleId");
+                    throw new System.ArgumentNullException("id");
                 }
-                ModelCodeFluent.Vehicle i = this.TryGetValue(vehicleId);
+                ModelCodeFluent.Identity.UserLogin i = this.TryGetValue(id);
                 return i;
             }
             set
             {
-                if ((vehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+                if ((id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
                 {
-                    throw new System.ArgumentNullException("vehicleId");
+                    throw new System.ArgumentNullException("id");
                 }
                 if ((value == null))
                 {
-                    ModelCodeFluent.Vehicle vehicle = this.TryGetValue(vehicleId);
-                    if ((vehicle != null))
+                    ModelCodeFluent.Identity.UserLogin userLogin = this.TryGetValue(id);
+                    if ((userLogin != null))
                     {
-                        this.Remove(vehicle);
+                        this.Remove(userLogin);
                     }
                     return;
                 }
-                ModelCodeFluent.Vehicle existing = this.TryGetValue(value.VehicleId);
+                ModelCodeFluent.Identity.UserLogin existing = this.TryGetValue(value.Id);
                 if ((existing != null))
                 {
                     this.Remove(existing);
@@ -243,7 +261,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.AllowEdit;
+                return this._blm2262660159.AllowEdit;
             }
         }
         
@@ -251,7 +269,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.AllowNew;
+                return this._blm2262660159.AllowNew;
             }
         }
         
@@ -259,7 +277,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.AllowRemove;
+                return this._blm2262660159.AllowRemove;
             }
         }
         
@@ -267,7 +285,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.IsSorted;
+                return this._blm2262660159.IsSorted;
             }
         }
         
@@ -275,7 +293,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SortDirection;
+                return this._blm2262660159.SortDirection;
             }
         }
         
@@ -283,7 +301,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SortProperty;
+                return this._blm2262660159.SortProperty;
             }
         }
         
@@ -299,7 +317,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SupportsSearching;
+                return this._blm2262660159.SupportsSearching;
             }
         }
         
@@ -307,7 +325,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SupportsSorting;
+                return this._blm2262660159.SupportsSorting;
             }
         }
         
@@ -358,54 +376,58 @@ namespace ModelCodeFluent
             this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("Item[]"));
         }
         
-        protected virtual void Relate(ModelCodeFluent.Vehicle item, CodeFluent.Runtime.CodeFluentRelationType relationType)
+        protected virtual void Relate(ModelCodeFluent.Identity.UserLogin item, CodeFluent.Runtime.CodeFluentRelationType relationType)
         {
             ((CodeFluent.Runtime.ICodeFluentSet)(this)).Relations[item] = relationType;
         }
         
-        public int Add(ModelCodeFluent.Vehicle vehicle)
+        public int Add(ModelCodeFluent.Identity.UserLogin userLogin)
         {
             int localAdd = this.BaseList.Count;
-            this.BaseAdd(vehicle);
+            this.BaseAdd(userLogin);
             return localAdd;
         }
         
-        protected virtual int BaseAdd(ModelCodeFluent.Vehicle vehicle)
+        protected virtual int BaseAdd(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("userLogin");
             }
-            if ((vehicle.VehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((userLogin.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
-                CodeFluent.Runtime.CodeFluentRuntimeException.Throw("invalidEntityKey", "VehicleId", "vehicle", "ModelCodeFluent.Vehicle");
+                CodeFluent.Runtime.CodeFluentRuntimeException.Throw("invalidEntityKey", "Id", "userLogin", "ModelCodeFluent.Identity.UserLogin");
             }
             try
             {
-                this.BaseTable.Add(vehicle.VehicleId, vehicle);
+                this.BaseTable.Add(userLogin.Id, userLogin);
             }
             catch (System.ArgumentNullException ane)
             {
-                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.VehicleCollection", vehicle.EntityKey), ane);
+                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.Identity.UserLoginCollection", userLogin.EntityKey), ane);
             }
             catch (System.ArgumentException ae)
             {
-                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.VehicleCollection", vehicle.VehicleId), ae);
+                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.Identity.UserLoginCollection", userLogin.Id), ae);
             }
-            vehicle.KeyChanged += new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+            userLogin.KeyChanged += new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+            if ((this._loginsUserUser != null))
+            {
+                userLogin.User = this._loginsUserUser;
+            }
             int localAdd = this.BaseList.Count;
-            this.BaseList.Add(vehicle);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, vehicle, localAdd));
+            this.BaseList.Add(userLogin);
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, userLogin, localAdd));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemAdded, localAdd));
             return localAdd;
         }
         
         int System.Collections.IList.Add(object value)
         {
-            ModelCodeFluent.Vehicle vehicle = null;
+            ModelCodeFluent.Identity.UserLogin userLogin = null;
             try
             {
-                vehicle = ((ModelCodeFluent.Vehicle)(value));
+                userLogin = ((ModelCodeFluent.Identity.UserLogin)(value));
             }
             catch (System.InvalidCastException )
             {
@@ -428,28 +450,28 @@ namespace ModelCodeFluent
                     throw new System.ArgumentException("value");
                 }
             }
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 throw new System.ArgumentException("value");
             }
-            int localAdd = this.Add(vehicle);
+            int localAdd = this.Add(userLogin);
             return localAdd;
         }
         
-        void System.Collections.Generic.ICollection<ModelCodeFluent.Vehicle>.Add(ModelCodeFluent.Vehicle vehicle)
+        void System.Collections.Generic.ICollection<ModelCodeFluent.Identity.UserLogin>.Add(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            this.BaseAdd(vehicle);
+            this.BaseAdd(userLogin);
         }
         
-        public virtual ModelCodeFluent.Vehicle AddByEntityKey(string key)
+        public virtual ModelCodeFluent.Identity.UserLogin AddByEntityKey(string key)
         {
-            ModelCodeFluent.Vehicle vehicle = ModelCodeFluent.Vehicle.LoadByEntityKey(key);
-            if (((vehicle != null) 
-                        && (this.Contains(vehicle) == false)))
+            ModelCodeFluent.Identity.UserLogin userLogin = ModelCodeFluent.Identity.UserLogin.LoadByEntityKey(key);
+            if (((userLogin != null) 
+                        && (this.Contains(userLogin) == false)))
             {
-                this.Add(vehicle);
+                this.Add(userLogin);
             }
-            return vehicle;
+            return userLogin;
         }
         
         public void Sort()
@@ -457,17 +479,17 @@ namespace ModelCodeFluent
             this.Sort(null);
         }
         
-        public virtual void Sort(System.Collections.Generic.IComparer<ModelCodeFluent.Vehicle> comparer)
+        public virtual void Sort(System.Collections.Generic.IComparer<ModelCodeFluent.Identity.UserLogin> comparer)
         {
             this.BaseList.Sort(comparer);
         }
         
-        public void CopyTo(ModelCodeFluent.Vehicle[] array, int index)
+        public void CopyTo(ModelCodeFluent.Identity.UserLogin[] array, int index)
         {
             this.BaseCopyTo(array, index);
         }
         
-        protected virtual void BaseCopyTo(ModelCodeFluent.Vehicle[] array, int index)
+        protected virtual void BaseCopyTo(ModelCodeFluent.Identity.UserLogin[] array, int index)
         {
             this.BaseList.CopyTo(array, index);
         }
@@ -477,85 +499,89 @@ namespace ModelCodeFluent
             CodeFluent.Runtime.Utilities.ConvertUtilities.CopyTo(this, array, index);
         }
         
-        public bool Contains(ModelCodeFluent.Vehicle vehicle)
+        public bool Contains(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            bool localContains = this.BaseContains(vehicle);
+            bool localContains = this.BaseContains(userLogin);
             return localContains;
         }
         
-        protected virtual bool BaseContains(ModelCodeFluent.Vehicle vehicle)
+        protected virtual bool BaseContains(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return false;
             }
-            bool localContains = this.BaseTable.ContainsKey(vehicle.VehicleId);
+            bool localContains = this.BaseTable.ContainsKey(userLogin.Id);
             return localContains;
         }
         
         bool System.Collections.IList.Contains(object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            return this.Contains(vehicle);
+            ModelCodeFluent.Identity.UserLogin userLogin;
+			userLogin = value as ModelCodeFluent.Identity.UserLogin;
+            return this.Contains(userLogin);
         }
         
-        public int IndexOf(ModelCodeFluent.Vehicle vehicle)
+        public int IndexOf(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            int localIndexOf = this.BaseIndexOf(vehicle);
+            int localIndexOf = this.BaseIndexOf(userLogin);
             return localIndexOf;
         }
         
-        protected virtual int BaseIndexOf(ModelCodeFluent.Vehicle vehicle)
+        protected virtual int BaseIndexOf(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return -1;
             }
-            int localIndexOf = this.BaseList.IndexOf(vehicle);
+            int localIndexOf = this.BaseList.IndexOf(userLogin);
             return localIndexOf;
         }
         
         int System.Collections.IList.IndexOf(object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            return this.IndexOf(vehicle);
+            ModelCodeFluent.Identity.UserLogin userLogin;
+			userLogin = value as ModelCodeFluent.Identity.UserLogin;
+            return this.IndexOf(userLogin);
         }
         
-        public void Insert(int index, ModelCodeFluent.Vehicle vehicle)
+        public void Insert(int index, ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            this.BaseInsert(index, vehicle);
+            this.BaseInsert(index, userLogin);
         }
         
-        protected virtual void BaseInsert(int index, ModelCodeFluent.Vehicle vehicle)
+        protected virtual void BaseInsert(int index, ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("userLogin");
             }
             try
             {
-                this.BaseTable.Add(vehicle.VehicleId, vehicle);
+                this.BaseTable.Add(userLogin.Id, userLogin);
             }
             catch (System.ArgumentNullException ane)
             {
-                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.VehicleCollection", vehicle.EntityKey), ane);
+                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.Identity.UserLoginCollection", userLogin.EntityKey), ane);
             }
             catch (System.ArgumentException ae)
             {
-                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.VehicleCollection", vehicle.VehicleId), ae);
+                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.Identity.UserLoginCollection", userLogin.Id), ae);
             }
-            this.BaseList.Insert(index, vehicle);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, vehicle, index));
+            this.BaseList.Insert(index, userLogin);
+            if ((this._loginsUserUser != null))
+            {
+                userLogin.User = this._loginsUserUser;
+            }
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, userLogin, index));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemAdded, index));
         }
         
         void System.Collections.IList.Insert(int index, object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            this.Insert(index, vehicle);
+            ModelCodeFluent.Identity.UserLogin userLogin;
+			userLogin = value as ModelCodeFluent.Identity.UserLogin;
+            this.Insert(index, userLogin);
         }
         
         public virtual void Clear()
@@ -564,59 +590,67 @@ namespace ModelCodeFluent
             int count = this.Count;
             for (index = 0; (index < count); index = (index + 1))
             {
-                ModelCodeFluent.Vehicle Vehicle = this[0];
-                this.BaseRemove(Vehicle);
+                ModelCodeFluent.Identity.UserLogin UserLogin = this[0];
+                this.BaseRemove(UserLogin);
             }
             this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Refresh, null));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.Reset, -1));
         }
         
-        public bool Remove(ModelCodeFluent.Vehicle vehicle)
+        public bool Remove(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            return this.BaseRemove(vehicle);
+            return this.BaseRemove(userLogin);
         }
         
-        protected virtual bool BaseRemove(ModelCodeFluent.Vehicle vehicle)
+        protected virtual bool BaseRemove(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("userLogin");
             }
-            int index = this.IndexOf(vehicle);
-            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Vehicle>.ListChangedTypeDeleting)), index));
+            int index = this.IndexOf(userLogin);
+            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Identity.UserLogin>.ListChangedTypeDeleting)), index));
             bool ret;
-            ret = this.BaseList.Remove(vehicle);
-            vehicle.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
-            ret = this.BaseTable.Remove(vehicle.VehicleId);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, vehicle, index));
+            ret = this.BaseList.Remove(userLogin);
+            userLogin.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+            ret = this.BaseTable.Remove(userLogin.Id);
+            if ((this._loginsUserUser != null))
+            {
+                userLogin.User = null;
+            }
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, userLogin, index));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemDeleted, index));
             return ret;
         }
         
         void System.Collections.IList.Remove(object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            this.Remove(vehicle);
+            ModelCodeFluent.Identity.UserLogin userLogin;
+			userLogin = value as ModelCodeFluent.Identity.UserLogin;
+            this.Remove(userLogin);
         }
         
         public virtual void RemoveAt(int index)
         {
-            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Vehicle>.ListChangedTypeDeleting)), index));
-            ModelCodeFluent.Vehicle vehicle = this.BaseList[index];
-            if ((vehicle != null))
+            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Identity.UserLogin>.ListChangedTypeDeleting)), index));
+            ModelCodeFluent.Identity.UserLogin userLogin = this.BaseList[index];
+            if ((userLogin != null))
             {
-                vehicle.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
-                this.BaseTable.Remove(vehicle.VehicleId);
+                userLogin.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+                this.BaseTable.Remove(userLogin.Id);
+            }
+            if ((this._loginsUserUser != null))
+            {
+                userLogin.User = null;
             }
             this.BaseList.RemoveAt(index);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, vehicle, index));
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, userLogin, index));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemDeleted, index));
         }
         
-        public virtual System.Collections.Generic.IEnumerator<ModelCodeFluent.Vehicle> GetEnumerator()
+        public virtual System.Collections.Generic.IEnumerator<ModelCodeFluent.Identity.UserLogin> GetEnumerator()
         {
-            System.Collections.Generic.IEnumerator<ModelCodeFluent.Vehicle> e = this.BaseList.GetEnumerator();
+            System.Collections.Generic.IEnumerator<ModelCodeFluent.Identity.UserLogin> e = this.BaseList.GetEnumerator();
             return e;
         }
         
@@ -625,12 +659,12 @@ namespace ModelCodeFluent
             return this.BaseList.GetEnumerator();
         }
         
-        private ModelCodeFluent.Vehicle TryGetValue(System.Guid key)
+        private ModelCodeFluent.Identity.UserLogin TryGetValue(System.Guid key)
         {
-            ModelCodeFluent.Vehicle vehicle;
-            if ((this.BaseTable.TryGetValue(key, out vehicle) == true))
+            ModelCodeFluent.Identity.UserLogin userLogin;
+            if ((this.BaseTable.TryGetValue(key, out userLogin) == true))
             {
-                return vehicle;
+                return userLogin;
             }
             return null;
         }
@@ -640,11 +674,11 @@ namespace ModelCodeFluent
             int index;
             for (index = (this.Count - 1); (index >= 0); index = (index - 1))
             {
-                ModelCodeFluent.Vehicle vehicle = this[index];
-                vehicle.Save();
-                if ((vehicle.EntityState == CodeFluent.Runtime.CodeFluentEntityState.Deleted))
+                ModelCodeFluent.Identity.UserLogin userLogin = this[index];
+                userLogin.Save();
+                if ((userLogin.EntityState == CodeFluent.Runtime.CodeFluentEntityState.Deleted))
                 {
-                    this.Remove(vehicle);
+                    this.Remove(userLogin);
                 }
             }
         }
@@ -670,6 +704,7 @@ namespace ModelCodeFluent
                     pageSize = int.MaxValue;
                 }
             }
+            this._loginsUserUser = null;
             this.BaseList.Clear();
             this.BaseTable.Clear();
             int count = 0;
@@ -682,20 +717,20 @@ namespace ModelCodeFluent
                 readCount = (readCount + 1);
                 if ((CodeFluent.Runtime.CodeFluentPersistence.CanAddEntity(pageIndex, pageSize, pageOptions, readCount) == true))
                 {
-                    ModelCodeFluent.Vehicle vehicle = new ModelCodeFluent.Vehicle();
-                    ((CodeFluent.Runtime.ICodeFluentEntity)(vehicle)).ReadRecord(reader);
-                    if ((this.BaseContains(vehicle) == false))
+                    ModelCodeFluent.Identity.UserLogin userLogin = new ModelCodeFluent.Identity.UserLogin();
+                    ((CodeFluent.Runtime.ICodeFluentEntity)(userLogin)).ReadRecord(reader);
+                    if ((this.BaseContains(userLogin) == false))
                     {
-                        this.BaseAdd(vehicle);
+                        this.BaseAdd(userLogin);
                         count = (count + 1);
                     }
-                    vehicle.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+                    userLogin.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
                 }
             }
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.VehicleCollection PageLoadAll(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions)
+        public static ModelCodeFluent.Identity.UserLoginCollection PageLoadAll(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions)
         {
             if ((pageIndex < 0))
             {
@@ -712,11 +747,11 @@ namespace ModelCodeFluent
                     pageSize = int.MaxValue;
                 }
             }
-            ModelCodeFluent.VehicleCollection ret = new ModelCodeFluent.VehicleCollection();
+            ModelCodeFluent.Identity.UserLoginCollection ret = new ModelCodeFluent.Identity.UserLoginCollection();
             System.Data.IDataReader reader = null;
             try
             {
-                reader = ModelCodeFluent.VehicleCollection.PageDataLoadAll(pageOptions);
+                reader = ModelCodeFluent.Identity.UserLoginCollection.PageDataLoadAll(pageOptions);
                 if ((reader == null))
                 {
                     return ret;
@@ -735,16 +770,16 @@ namespace ModelCodeFluent
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.VehicleCollection LoadAll()
+        public static ModelCodeFluent.Identity.UserLoginCollection LoadAll()
         {
-            ModelCodeFluent.VehicleCollection ret = ModelCodeFluent.VehicleCollection.PageLoadAll(int.MinValue, int.MaxValue, null);
+            ModelCodeFluent.Identity.UserLoginCollection ret = ModelCodeFluent.Identity.UserLoginCollection.PageLoadAll(int.MinValue, int.MaxValue, null);
             return ret;
         }
         
         public static System.Data.IDataReader PageDataLoadAll(CodeFluent.Runtime.PageOptions pageOptions)
         {
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "LoadAll");
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "LoadAll");
             if ((pageOptions != null))
             {
                 System.Collections.IEnumerator enumerator = pageOptions.OrderByArguments.GetEnumerator();
@@ -764,7 +799,145 @@ namespace ModelCodeFluent
         
         public static System.Data.IDataReader DataLoadAll()
         {
-            System.Data.IDataReader reader = ModelCodeFluent.VehicleCollection.PageDataLoadAll(null);
+            System.Data.IDataReader reader = ModelCodeFluent.Identity.UserLoginCollection.PageDataLoadAll(null);
+            return reader;
+        }
+        
+        private void LoadByUser(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions, System.Data.IDataReader reader, ModelCodeFluent.Identity.User user)
+        {
+            if ((reader == null))
+            {
+                throw new System.ArgumentNullException("reader");
+            }
+            if ((pageIndex < 0))
+            {
+                pageIndex = 0;
+            }
+            if ((pageSize < 0))
+            {
+                if ((pageOptions != null))
+                {
+                    pageSize = pageOptions.DefaultPageSize;
+                }
+                else
+                {
+                    pageSize = int.MaxValue;
+                }
+            }
+            CodeFluent.Runtime.CodeFluentEntityState userState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+            if ((user != null))
+            {
+                userState = user.EntityState;
+            }
+            this._loginsUserUser = user;
+            this.BaseList.Clear();
+            this.BaseTable.Clear();
+            int count = 0;
+            int readCount = 0;
+            bool readerRead;
+            for (readerRead = reader.Read(); ((readerRead == true) 
+                        && ((count < this.MaxCount) 
+                        && (count < pageSize))); readerRead = reader.Read())
+            {
+                readCount = (readCount + 1);
+                if ((CodeFluent.Runtime.CodeFluentPersistence.CanAddEntity(pageIndex, pageSize, pageOptions, readCount) == true))
+                {
+                    ModelCodeFluent.Identity.UserLogin userLogin = new ModelCodeFluent.Identity.UserLogin();
+                    ((CodeFluent.Runtime.ICodeFluentEntity)(userLogin)).ReadRecord(reader);
+                    if ((this.BaseContains(userLogin) == false))
+                    {
+                        this.BaseAdd(userLogin);
+                        count = (count + 1);
+                    }
+                    userLogin.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+                }
+            }
+            if ((user != null))
+            {
+                user.EntityState = userState;
+            }
+        }
+        
+        [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
+        public static ModelCodeFluent.Identity.UserLoginCollection PageLoadByUser(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions, ModelCodeFluent.Identity.User user)
+        {
+            if ((pageIndex < 0))
+            {
+                pageIndex = 0;
+            }
+            if ((pageSize < 0))
+            {
+                if ((pageOptions != null))
+                {
+                    pageSize = pageOptions.DefaultPageSize;
+                }
+                else
+                {
+                    pageSize = int.MaxValue;
+                }
+            }
+            ModelCodeFluent.Identity.UserLoginCollection ret = new ModelCodeFluent.Identity.UserLoginCollection();
+            System.Data.IDataReader reader = null;
+            try
+            {
+                reader = ModelCodeFluent.Identity.UserLoginCollection.PageDataLoadByUser(pageOptions, user);
+                if ((reader == null))
+                {
+                    return ret;
+                }
+                ret.LoadByUser(pageIndex, pageSize, pageOptions, reader, user);
+            }
+            finally
+            {
+                if ((reader != null))
+                {
+                    reader.Dispose();
+                }
+                CodeFluent.Runtime.CodeFluentPersistence.CompleteCommand(ModelCodeFluent.Constants.ModelCodeFluentStoreName);
+            }
+            return ret;
+        }
+        
+        [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
+        public static ModelCodeFluent.Identity.UserLoginCollection LoadByUser(ModelCodeFluent.Identity.User user)
+        {
+            ModelCodeFluent.Identity.UserLoginCollection ret = ModelCodeFluent.Identity.UserLoginCollection.PageLoadByUser(int.MinValue, int.MaxValue, null, user);
+            return ret;
+        }
+        
+        public static System.Data.IDataReader PageDataLoadByUser(CodeFluent.Runtime.PageOptions pageOptions, ModelCodeFluent.Identity.User user)
+        {
+            if ((user == null))
+            {
+                return null;
+            }
+            if ((user.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            {
+                CodeFluent.Runtime.CodeFluentRuntimeException.Throw("invalidEntityKey", "Id", "user", "ModelCodeFluent.Identity.User");
+            }
+            CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "LoadByUser");
+            persistence.AddParameter("@UserId", user.Id, CodeFluentPersistence.DefaultGuidValue);
+            if ((pageOptions != null))
+            {
+                System.Collections.IEnumerator enumerator = pageOptions.OrderByArguments.GetEnumerator();
+                bool b;
+                int index = 0;
+                for (b = enumerator.MoveNext(); b; b = enumerator.MoveNext())
+                {
+                    CodeFluent.Runtime.OrderByArgument argument = ((CodeFluent.Runtime.OrderByArgument)(enumerator.Current));
+                    persistence.AddParameter(string.Format("@_orderBy{0}", index), argument.Name);
+                    persistence.AddParameter(string.Format("@_orderByDirection{0}", index), ((int)(argument.Direction)));
+                    index = (index + 1);
+                }
+            }
+            System.Data.IDataReader reader = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence.ExecuteReader();
+            return reader;
+        }
+        
+        public static System.Data.IDataReader DataLoadByUser(ModelCodeFluent.Identity.User user)
+        {
+            System.Data.IDataReader reader = ModelCodeFluent.Identity.UserLoginCollection.PageDataLoadByUser(null, user);
             return reader;
         }
         
@@ -793,19 +966,19 @@ namespace ModelCodeFluent
             this.BaseTrace(writer);
         }
         
-        public virtual void CopyTo(ModelCodeFluent.VehicleCollection collection, bool deep)
+        public virtual void CopyTo(ModelCodeFluent.Identity.UserLoginCollection collection, bool deep)
         {
-            if ((typeof(System.ICloneable).IsAssignableFrom(typeof(ModelCodeFluent.Vehicle)) == false))
+            if ((typeof(System.ICloneable).IsAssignableFrom(typeof(ModelCodeFluent.Identity.UserLogin)) == false))
             {
                 deep = false;
             }
-            System.Collections.Generic.IEnumerator<ModelCodeFluent.Vehicle> enumerator = this.GetEnumerator();
+            System.Collections.Generic.IEnumerator<ModelCodeFluent.Identity.UserLogin> enumerator = this.GetEnumerator();
             bool b;
             for (b = enumerator.MoveNext(); b; b = enumerator.MoveNext())
             {
                 if ((deep == true))
                 {
-                    collection.Add(((ModelCodeFluent.Vehicle)(((System.ICloneable)(enumerator.Current)).Clone())));
+                    collection.Add(((ModelCodeFluent.Identity.UserLogin)(((System.ICloneable)(enumerator.Current)).Clone())));
                 }
                 else
                 {
@@ -814,9 +987,9 @@ namespace ModelCodeFluent
             }
         }
         
-        public virtual ModelCodeFluent.VehicleCollection Clone(bool deep)
+        public virtual ModelCodeFluent.Identity.UserLoginCollection Clone(bool deep)
         {
-            ModelCodeFluent.VehicleCollection ret = new ModelCodeFluent.VehicleCollection();
+            ModelCodeFluent.Identity.UserLoginCollection ret = new ModelCodeFluent.Identity.UserLoginCollection();
             this.CopyTo(ret, deep);
             return ret;
         }
@@ -847,7 +1020,7 @@ namespace ModelCodeFluent
         
         void System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor property)
         {
-            this._blm2933840664.AddIndex(property);
+            this._blm2262660159.AddIndex(property);
         }
         
         protected virtual void OnAddingNew(System.ComponentModel.AddingNewEventArgs e)
@@ -860,37 +1033,37 @@ namespace ModelCodeFluent
         
         object System.ComponentModel.IBindingList.AddNew()
         {
-            ModelCodeFluent.Vehicle add = new ModelCodeFluent.Vehicle();
+            ModelCodeFluent.Identity.UserLogin add = new ModelCodeFluent.Identity.UserLogin();
             System.ComponentModel.AddingNewEventArgs e = new System.ComponentModel.AddingNewEventArgs(add);
             this.OnAddingNew(e);
-            add = ((ModelCodeFluent.Vehicle)(e.NewObject));
+            add = ((ModelCodeFluent.Identity.UserLogin)(e.NewObject));
             if ((add == null))
             {
-                add = new ModelCodeFluent.Vehicle();
+                add = new ModelCodeFluent.Identity.UserLogin();
             }
-            add.VehicleId = System.Guid.NewGuid();
+            add.Id = System.Guid.NewGuid();
             this._addNewPos = this.Add(add);
             return add;
         }
         
         void System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor property, System.ComponentModel.ListSortDirection direction)
         {
-            this._blm2933840664.ApplySort(property, direction);
+            this._blm2262660159.ApplySort(property, direction);
         }
         
         int System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor property, object key)
         {
-            return this._blm2933840664.Find(property, key);
+            return this._blm2262660159.Find(property, key);
         }
         
         void System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor property)
         {
-            this._blm2933840664.RemoveIndex(property);
+            this._blm2262660159.RemoveIndex(property);
         }
         
         void System.ComponentModel.IBindingList.RemoveSort()
         {
-            this._blm2933840664.RemoveSort();
+            this._blm2262660159.RemoveSort();
         }
         
         protected virtual void OnListChanged(System.ComponentModel.ListChangedEventArgs e)
@@ -915,7 +1088,7 @@ namespace ModelCodeFluent
             }
         }
         
-        public void AddRange(System.Collections.Generic.IEnumerable<ModelCodeFluent.Vehicle> collection)
+        public void AddRange(System.Collections.Generic.IEnumerable<ModelCodeFluent.Identity.UserLogin> collection)
         {
             CodeFluent.Runtime.Utilities.ConvertUtilities.AddRange(this, collection);
         }
@@ -926,7 +1099,7 @@ namespace ModelCodeFluent
             {
                 throw new System.ArgumentNullException("e");
             }
-            ModelCodeFluent.Vehicle existing;
+            ModelCodeFluent.Identity.UserLogin existing;
             if ((this.BaseTable.TryGetValue(e.OldKey, out existing) == false))
             {
                 return;
@@ -941,48 +1114,59 @@ namespace ModelCodeFluent
                 }
                 catch (System.ArgumentNullException ane)
                 {
-                    throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.VehicleCollection", ((CodeFluent.Runtime.ICodeFluentEntity)(item)).EntityKey), ane);
+                    throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.Identity.UserLoginCollection", ((CodeFluent.Runtime.ICodeFluentEntity)(item)).EntityKey), ane);
                 }
                 catch (System.ArgumentException ae)
                 {
-                    throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.VehicleCollection", item.Key), ae);
+                    throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.Identity.UserLoginCollection", item.Key), ae);
                 }
                 this.BaseTable.Remove(e.OldKey);
             }
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.VehicleCollection PageLoadAll(int pageIndex, int pageSize)
+        public static ModelCodeFluent.Identity.UserLoginCollection PageLoadAll(int pageIndex, int pageSize)
         {
-            return ModelCodeFluent.VehicleCollection.PageLoadAll(pageIndex, pageSize, null);
+            return ModelCodeFluent.Identity.UserLoginCollection.PageLoadAll(pageIndex, pageSize, null);
+        }
+        
+        [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
+        public static ModelCodeFluent.Identity.UserLoginCollection PageLoadByUser(int pageIndex, int pageSize, System.Guid userId)
+        {
+            ModelCodeFluent.Identity.User user = ModelCodeFluent.Identity.User.Load(userId);
+            if ((user == null))
+            {
+                return new ModelCodeFluent.Identity.UserLoginCollection();
+            }
+            return ModelCodeFluent.Identity.UserLoginCollection.PageLoadByUser(pageIndex, pageSize, null, user);
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Update, true)]
-        public static bool Save(ModelCodeFluent.Vehicle vehicle)
+        public static bool Save(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return false;
             }
-            bool ret = vehicle.Save();
+            bool ret = userLogin.Save();
             return ret;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public static bool Insert(ModelCodeFluent.Vehicle vehicle)
+        public static bool Insert(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            bool ret = ModelCodeFluent.Vehicle.Save(vehicle);
+            bool ret = ModelCodeFluent.Identity.UserLogin.Save(userLogin);
             return ret;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public static bool Delete(ModelCodeFluent.Vehicle vehicle)
+        public static bool Delete(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return false;
             }
-            bool ret = vehicle.Delete();
+            bool ret = userLogin.Delete();
             return ret;
         }
     }

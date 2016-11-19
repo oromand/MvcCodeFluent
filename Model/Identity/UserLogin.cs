@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelCodeFluent
+namespace ModelCodeFluent.Identity
 {
     using CodeFluent.Runtime;
     using CodeFluent.Runtime.Utilities;
@@ -19,9 +19,9 @@ namespace ModelCodeFluent
     [System.CodeDom.Compiler.GeneratedCodeAttribute("CodeFluent Entities", "1.0.61214.0842")]
     [System.SerializableAttribute()]
     [System.ComponentModel.DataObjectAttribute()]
-    [System.Diagnostics.DebuggerDisplayAttribute("EK={EntityKey}, Brand={Brand}, VehicleId={VehicleId}")]
+    [System.Diagnostics.DebuggerDisplayAttribute("EK={EntityKey}, ProviderName={ProviderName}, Id={Id}")]
     [System.ComponentModel.TypeConverterAttribute(typeof(CodeFluent.Runtime.Design.NameTypeConverter))]
-    public partial class Vehicle : System.ICloneable, System.IComparable, System.IComparable<ModelCodeFluent.Vehicle>, CodeFluent.Runtime.ICodeFluentCollectionEntity<System.Guid>, System.ComponentModel.IDataErrorInfo, CodeFluent.Runtime.ICodeFluentMemberValidator, CodeFluent.Runtime.ICodeFluentSummaryValidator, System.IEquatable<ModelCodeFluent.Vehicle>
+    public partial class UserLogin : System.ICloneable, System.IComparable, System.IComparable<ModelCodeFluent.Identity.UserLogin>, CodeFluent.Runtime.ICodeFluentCollectionEntity<System.Guid>, System.ComponentModel.IDataErrorInfo, CodeFluent.Runtime.ICodeFluentMemberValidator, CodeFluent.Runtime.ICodeFluentSummaryValidator, System.IEquatable<ModelCodeFluent.Identity.UserLogin>
     {
         
         private bool _raisePropertyChangedEvents = true;
@@ -30,13 +30,22 @@ namespace ModelCodeFluent
         
         private byte[] _rowVersion;
         
-        private System.Guid _vehicleId = CodeFluentPersistence.DefaultGuidValue;
+        private System.Guid _id = CodeFluentPersistence.DefaultGuidValue;
         
-        private string _brand = default(string);
+        private string _providerName = default(string);
         
-        public Vehicle()
+        private string _providerKey = default(string);
+        
+        private string _providerDisplayName = default(string);
+        
+        private System.Guid _userId = CodeFluentPersistence.DefaultGuidValue;
+        
+        [System.NonSerializedAttribute()]
+        private ModelCodeFluent.Identity.User _user = null;
+        
+        public UserLogin()
         {
-            this._vehicleId = System.Guid.NewGuid();
+            this._id = System.Guid.NewGuid();
             this._entityState = CodeFluent.Runtime.CodeFluentEntityState.Created;
         }
         
@@ -58,11 +67,11 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this.VehicleId.ToString();
+                return this.Id.ToString();
             }
             set
             {
-                this.VehicleId = ((System.Guid)(ConvertUtilities.ChangeType(value, typeof(System.Guid), CodeFluentPersistence.DefaultGuidValue)));
+                this.Id = ((System.Guid)(ConvertUtilities.ChangeType(value, typeof(System.Guid), CodeFluentPersistence.DefaultGuidValue)));
             }
         }
         
@@ -70,7 +79,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this.Brand;
+                return this.ProviderName;
             }
         }
         
@@ -97,27 +106,27 @@ namespace ModelCodeFluent
         
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=false, Type=typeof(System.Guid))]
         [System.ComponentModel.DataObjectFieldAttribute(true)]
-        public System.Guid VehicleId
+        public System.Guid Id
         {
             get
             {
-                return this._vehicleId;
+                return this._id;
             }
             set
             {
-                if ((System.Collections.Generic.EqualityComparer<System.Guid>.Default.Equals(value, this._vehicleId) == true))
+                if ((System.Collections.Generic.EqualityComparer<System.Guid>.Default.Equals(value, this._id) == true))
                 {
                     return;
                 }
-                System.Guid oldKey = this._vehicleId;
+                System.Guid oldKey = this._id;
                 if ((value.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
                 {
                     this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Created;
-                    this._vehicleId = System.Guid.NewGuid();
+                    this._id = System.Guid.NewGuid();
                 }
                 else
                 {
-                    this._vehicleId = value;
+                    this._id = value;
                 }
                 try
                 {
@@ -125,27 +134,107 @@ namespace ModelCodeFluent
                 }
                 catch (System.ArgumentException )
                 {
-                    this._vehicleId = oldKey;
+                    this._id = oldKey;
                     return;
                 }
                 this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Modified;
-                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("VehicleId"));
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("Id"));
             }
         }
         
         [System.ComponentModel.DefaultValueAttribute(default(string))]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Type=typeof(string))]
-        public string Brand
+        public string ProviderName
         {
             get
             {
-                return this._brand;
+                return this._providerName;
             }
             set
             {
-                this._brand = value;
+                this._providerName = value;
                 this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Modified;
-                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("Brand"));
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("ProviderName"));
+            }
+        }
+        
+        [System.ComponentModel.DefaultValueAttribute(default(string))]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Type=typeof(string))]
+        public string ProviderKey
+        {
+            get
+            {
+                return this._providerKey;
+            }
+            set
+            {
+                this._providerKey = value;
+                this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Modified;
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("ProviderKey"));
+            }
+        }
+        
+        [System.ComponentModel.DefaultValueAttribute(default(string))]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Type=typeof(string))]
+        public string ProviderDisplayName
+        {
+            get
+            {
+                return this._providerDisplayName;
+            }
+            set
+            {
+                this._providerDisplayName = value;
+                this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Modified;
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("ProviderDisplayName"));
+            }
+        }
+        
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=false)]
+        [System.ComponentModel.DataObjectFieldAttribute(true)]
+        public System.Guid UserId
+        {
+            get
+            {
+                if (((this._userId.Equals(CodeFluentPersistence.DefaultGuidValue) == true) 
+                            && (this._user != null)))
+                {
+                    this._userId = this._user.Id;
+                }
+                return this._userId;
+            }
+            set
+            {
+                if ((System.Collections.Generic.EqualityComparer<System.Guid>.Default.Equals(value, this.UserId) == true))
+                {
+                    return;
+                }
+                this._user = null;
+                this._userId = value;
+                this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Modified;
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("User"));
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("UserId"));
+            }
+        }
+        
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ModelCodeFluent.Identity.User User
+        {
+            get
+            {
+                if ((this._user == null))
+                {
+                    this._user = ModelCodeFluent.Identity.User.Load(this._userId);
+                }
+                return this._user;
+            }
+            set
+            {
+                this._userId = CodeFluentPersistence.DefaultGuidValue;
+                this._user = value;
+                this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Modified;
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("User"));
+                this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("UserId"));
             }
         }
         
@@ -169,7 +258,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this.VehicleId;
+                return this.Id;
             }
         }
         
@@ -229,50 +318,50 @@ namespace ModelCodeFluent
             }
         }
         
-        public virtual bool Equals(ModelCodeFluent.Vehicle vehicle)
+        public virtual bool Equals(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return false;
             }
-            if ((this.VehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((this.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
-                return base.Equals(vehicle);
+                return base.Equals(userLogin);
             }
-            return (this.VehicleId.Equals(vehicle.VehicleId) == true);
+            return (this.Id.Equals(userLogin.Id) == true);
         }
         
         public override int GetHashCode()
         {
-            return this.VehicleId.GetHashCode();
+            return this.Id.GetHashCode();
         }
         
         public override bool Equals(object obj)
         {
-            ModelCodeFluent.Vehicle vehicle = null;
-			vehicle = obj as ModelCodeFluent.Vehicle;
-            return this.Equals(vehicle);
+            ModelCodeFluent.Identity.UserLogin userLogin = null;
+			userLogin = obj as ModelCodeFluent.Identity.UserLogin;
+            return this.Equals(userLogin);
         }
         
         int System.IComparable.CompareTo(object value)
         {
-            ModelCodeFluent.Vehicle vehicle = null;
-vehicle = value as ModelCodeFluent.Vehicle;
-            if ((vehicle == null))
+            ModelCodeFluent.Identity.UserLogin userLogin = null;
+userLogin = value as ModelCodeFluent.Identity.UserLogin;
+            if ((userLogin == null))
             {
                 throw new System.ArgumentException("value");
             }
-            int localCompareTo = this.CompareTo(vehicle);
+            int localCompareTo = this.CompareTo(userLogin);
             return localCompareTo;
         }
         
-        public virtual int CompareTo(ModelCodeFluent.Vehicle vehicle)
+        public virtual int CompareTo(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("userLogin");
             }
-            int localCompareTo = this.VehicleId.CompareTo(vehicle.VehicleId);
+            int localCompareTo = this.Id.CompareTo(userLogin.Id);
             return localCompareTo;
         }
         
@@ -295,16 +384,40 @@ vehicle = value as ModelCodeFluent.Vehicle;
                 }
                 else
                 {
-                    externalValidate = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Vehicle.ExternalValidate", "Type \'ModelCodeFluent.Vehicle\' cannot be validated.", null);
+                    externalValidate = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Identity.UserLogin.ExternalValidate", "Type \'ModelCodeFluent.Identity.UserLogin\' cannot be validated.", null);
                 }
                 CodeFluentPersistence.AddValidationError(results, externalValidate);
             }
             CodeFluentPersistence.ValidateMember(culture, results, this, null);
-            if ((this.VehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((this.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
-                string localValidate = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Vehicle.VehicleId.NullException", "\'VehicleId\' property cannot be set to \'00000000-0000-0000-0000-000000000000\' for " +
-                        "type \'ModelCodeFluent.Vehicle\'", null);
+                string localValidate = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Identity.UserLogin.Id.NullException", "\'Id\' property cannot be set to \'00000000-0000-0000-0000-000000000000\' for type \'M" +
+                        "odelCodeFluent.Identity.UserLogin\'", null);
                 CodeFluentPersistence.AddValidationError(results, localValidate);
+            }
+            if ((this.ProviderName == default(string)))
+            {
+                string localValidate1 = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Identity.UserLogin.ProviderName.NullException", "\'ProviderName\' property cannot be set to \'\' for type \'ModelCodeFluent.Identity.Us" +
+                        "erLogin\'", null);
+                CodeFluentPersistence.AddValidationError(results, localValidate1);
+            }
+            if ((this.ProviderKey == default(string)))
+            {
+                string localValidate2 = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Identity.UserLogin.ProviderKey.NullException", "\'ProviderKey\' property cannot be set to \'\' for type \'ModelCodeFluent.Identity.Use" +
+                        "rLogin\'", null);
+                CodeFluentPersistence.AddValidationError(results, localValidate2);
+            }
+            if ((this.ProviderDisplayName == default(string)))
+            {
+                string localValidate3 = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Identity.UserLogin.ProviderDisplayName.NullException", "\'ProviderDisplayName\' property cannot be set to \'\' for type \'ModelCodeFluent.Iden" +
+                        "tity.UserLogin\'", null);
+                CodeFluentPersistence.AddValidationError(results, localValidate3);
+            }
+            if ((this.User == null))
+            {
+                string localValidate4 = ModelCodeFluent.Resources.Manager.GetStringWithDefault(culture, "ModelCodeFluent.Identity.UserLogin.User.NullException", "\'User\' property cannot be set to \'\' for type \'ModelCodeFluent.Identity.UserLogin\'" +
+                        "", null);
+                CodeFluentPersistence.AddValidationError(results, localValidate4);
             }
             this.OnEntityAction(new CodeFluent.Runtime.CodeFluentEntityActionEventArgs(this, CodeFluent.Runtime.CodeFluentEntityAction.Validated, false, results));
         }
@@ -347,8 +460,8 @@ vehicle = value as ModelCodeFluent.Vehicle;
                 return ret;
             }
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "Delete");
-            persistence.AddParameter("@Vehicle_VehicleId", this.VehicleId, CodeFluentPersistence.DefaultGuidValue);
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "Delete");
+            persistence.AddParameter("@UserLogin_Id", this.Id, CodeFluentPersistence.DefaultGuidValue);
             persistence.AddParameter("@_rowVersion", this.RowVersion);
             persistence.ExecuteNonQuery();
             this.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Deleted;
@@ -367,8 +480,11 @@ vehicle = value as ModelCodeFluent.Vehicle;
                         == 0) 
                         == false))
             {
-                this._vehicleId = CodeFluentPersistence.GetReaderValue(reader, "Vehicle_VehicleId", ((System.Guid)(CodeFluentPersistence.DefaultGuidValue)));
-                this._brand = CodeFluentPersistence.GetReaderValue(reader, "Vehicle_Brand", ((string)(default(string))));
+                this._id = CodeFluentPersistence.GetReaderValue(reader, "UserLogin_Id", ((System.Guid)(CodeFluentPersistence.DefaultGuidValue)));
+                this._providerName = CodeFluentPersistence.GetReaderValue(reader, "UserLogin_ProviderName", ((string)(default(string))));
+                this._providerKey = CodeFluentPersistence.GetReaderValue(reader, "UserLogin_ProviderKey", ((string)(default(string))));
+                this._providerDisplayName = CodeFluentPersistence.GetReaderValue(reader, "UserLogin_ProviderDisplayName", ((string)(default(string))));
+                this.UserId = CodeFluentPersistence.GetReaderValue(reader, "UserLogin_User_Id", ((System.Guid)(CodeFluentPersistence.DefaultGuidValue)));
             }
             if ((((options & CodeFluent.Runtime.CodeFluentReloadOptions.RowVersion) 
                         == 0) 
@@ -400,25 +516,25 @@ vehicle = value as ModelCodeFluent.Vehicle;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.Vehicle Load(System.Guid vehicleId)
+        public static ModelCodeFluent.Identity.UserLogin Load(System.Guid id)
         {
-            if ((vehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
                 return null;
             }
-            ModelCodeFluent.Vehicle vehicle = new ModelCodeFluent.Vehicle();
+            ModelCodeFluent.Identity.UserLogin userLogin = new ModelCodeFluent.Identity.UserLogin();
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "Load");
-            persistence.AddParameter("@VehicleId", vehicleId, CodeFluentPersistence.DefaultGuidValue);
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "Load");
+            persistence.AddParameter("@Id", id, CodeFluentPersistence.DefaultGuidValue);
             System.Data.IDataReader reader = null;
             try
             {
                 reader = persistence.ExecuteReader();
                 if ((reader.Read() == true))
                 {
-                    vehicle.ReadRecord(reader, CodeFluent.Runtime.CodeFluentReloadOptions.Default);
-                    vehicle.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
-                    return vehicle;
+                    userLogin.ReadRecord(reader, CodeFluent.Runtime.CodeFluentReloadOptions.Default);
+                    userLogin.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+                    return userLogin;
                 }
             }
             finally
@@ -433,25 +549,25 @@ vehicle = value as ModelCodeFluent.Vehicle;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, false)]
-        public static ModelCodeFluent.Vehicle LoadByVehicleId(System.Guid vehicleId)
+        public static ModelCodeFluent.Identity.UserLogin LoadById(System.Guid id)
         {
-            if ((vehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
                 return null;
             }
-            ModelCodeFluent.Vehicle vehicle = new ModelCodeFluent.Vehicle();
+            ModelCodeFluent.Identity.UserLogin userLogin = new ModelCodeFluent.Identity.UserLogin();
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "LoadByVehicleId");
-            persistence.AddParameter("@VehicleId", vehicleId, CodeFluentPersistence.DefaultGuidValue);
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "LoadById");
+            persistence.AddParameter("@Id", id, CodeFluentPersistence.DefaultGuidValue);
             System.Data.IDataReader reader = null;
             try
             {
                 reader = persistence.ExecuteReader();
                 if ((reader.Read() == true))
                 {
-                    vehicle.ReadRecord(reader, CodeFluent.Runtime.CodeFluentReloadOptions.Default);
-                    vehicle.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
-                    return vehicle;
+                    userLogin.ReadRecord(reader, CodeFluent.Runtime.CodeFluentReloadOptions.Default);
+                    userLogin.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+                    return userLogin;
                 }
             }
             finally
@@ -468,13 +584,13 @@ vehicle = value as ModelCodeFluent.Vehicle;
         public virtual bool Reload(CodeFluent.Runtime.CodeFluentReloadOptions options)
         {
             bool ret = false;
-            if ((this.VehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((this.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
                 return ret;
             }
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "Load");
-            persistence.AddParameter("@VehicleId", this.VehicleId);
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "Load");
+            persistence.AddParameter("@Id", this.Id);
             System.Data.IDataReader reader = null;
             try
             {
@@ -522,9 +638,12 @@ vehicle = value as ModelCodeFluent.Vehicle;
                 return false;
             }
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "Save");
-            persistence.AddParameter("@Vehicle_VehicleId", this.VehicleId, CodeFluentPersistence.DefaultGuidValue);
-            persistence.AddParameter("@Vehicle_Brand", this.Brand, default(string));
+            persistence.CreateStoredProcedureCommand(null, "UserLogin", "Save");
+            persistence.AddParameter("@UserLogin_Id", this.Id, CodeFluentPersistence.DefaultGuidValue);
+            persistence.AddParameter("@UserLogin_ProviderName", this.ProviderName, default(string));
+            persistence.AddParameter("@UserLogin_ProviderKey", this.ProviderKey, default(string));
+            persistence.AddParameter("@UserLogin_ProviderDisplayName", this.ProviderDisplayName, default(string));
+            persistence.AddParameter("@UserLogin_User_Id", this.UserId, CodeFluentPersistence.DefaultGuidValue);
             persistence.AddParameter("@_trackLastWriteUser", persistence.Context.User.Name);
             persistence.AddParameter("@_rowVersion", this.RowVersion);
             System.Data.IDataReader reader = null;
@@ -557,31 +676,31 @@ vehicle = value as ModelCodeFluent.Vehicle;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Update, true)]
-        public static bool Save(ModelCodeFluent.Vehicle vehicle)
+        public static bool Save(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return false;
             }
-            bool ret = vehicle.Save();
+            bool ret = userLogin.Save();
             return ret;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public static bool Insert(ModelCodeFluent.Vehicle vehicle)
+        public static bool Insert(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            bool ret = ModelCodeFluent.Vehicle.Save(vehicle);
+            bool ret = ModelCodeFluent.Identity.UserLogin.Save(userLogin);
             return ret;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public static bool Delete(ModelCodeFluent.Vehicle vehicle)
+        public static bool Delete(ModelCodeFluent.Identity.UserLogin userLogin)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
                 return false;
             }
-            bool ret = vehicle.Delete();
+            bool ret = userLogin.Delete();
             return ret;
         }
         
@@ -606,43 +725,62 @@ vehicle = value as ModelCodeFluent.Vehicle;
         protected virtual void BaseTrace(System.CodeDom.Compiler.IndentedTextWriter writer)
         {
             writer.Write("[");
-            writer.Write("VehicleId=");
-            writer.Write(this.VehicleId);
+            writer.Write("Id=");
+            writer.Write(this.Id);
             writer.Write(",");
-            writer.Write("Brand=");
-            writer.Write(this.Brand);
+            writer.Write("ProviderName=");
+            writer.Write(this.ProviderName);
+            writer.Write(",");
+            writer.Write("ProviderKey=");
+            writer.Write(this.ProviderKey);
+            writer.Write(",");
+            writer.Write("ProviderDisplayName=");
+            writer.Write(this.ProviderDisplayName);
+            writer.Write(",");
+            writer.Write("User=");
+            if ((this._user != null))
+            {
+                ((CodeFluent.Runtime.ICodeFluentObject)(this._user)).Trace(writer);
+            }
+            else
+            {
+                writer.Write("<null>");
+            }
+            writer.Write(",");
+            writer.Write("_userId=");
+            writer.Write(this._userId);
             writer.Write(", EntityState=");
             writer.Write(this.EntityState);
             writer.Write("]");
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.Vehicle LoadByEntityKey(string key)
+        public static ModelCodeFluent.Identity.UserLogin LoadByEntityKey(string key)
         {
             if ((key == string.Empty))
             {
                 return null;
             }
-            ModelCodeFluent.Vehicle vehicle;
+            ModelCodeFluent.Identity.UserLogin userLogin;
             System.Guid var = ((System.Guid)(ConvertUtilities.ChangeType(key, typeof(System.Guid), CodeFluentPersistence.DefaultGuidValue)));
-            vehicle = ModelCodeFluent.Vehicle.Load(var);
-            return vehicle;
+            userLogin = ModelCodeFluent.Identity.UserLogin.Load(var);
+            return userLogin;
         }
         
         protected virtual void ValidateMember(System.Globalization.CultureInfo culture, string memberName, System.Collections.Generic.IList<CodeFluent.Runtime.CodeFluentValidationException> results)
         {
         }
         
-        public ModelCodeFluent.Vehicle Clone(bool deep)
+        public ModelCodeFluent.Identity.UserLogin Clone(bool deep)
         {
-            ModelCodeFluent.Vehicle vehicle = new ModelCodeFluent.Vehicle();
-            this.CopyTo(vehicle, deep);
-            return vehicle;
+            ModelCodeFluent.Identity.UserLogin userLogin = new ModelCodeFluent.Identity.UserLogin();
+            this.CopyTo(userLogin, deep);
+            return userLogin;
         }
         
-        public ModelCodeFluent.Vehicle Clone()
+        public ModelCodeFluent.Identity.UserLogin Clone()
         {
-            ModelCodeFluent.Vehicle localClone = this.Clone(true);
+            ModelCodeFluent.Identity.UserLogin localClone = this.Clone(true);
             return localClone;
         }
         
@@ -658,26 +796,41 @@ vehicle = value as ModelCodeFluent.Vehicle;
             {
                 throw new System.ArgumentNullException("dict");
             }
-            if ((dict.Contains("VehicleId") == true))
+            if ((dict.Contains("Id") == true))
             {
-                this.VehicleId = ((System.Guid)(ConvertUtilities.ChangeType(dict["VehicleId"], typeof(System.Guid), CodeFluentPersistence.DefaultGuidValue)));
+                this.Id = ((System.Guid)(ConvertUtilities.ChangeType(dict["Id"], typeof(System.Guid), CodeFluentPersistence.DefaultGuidValue)));
             }
-            if ((dict.Contains("Brand") == true))
+            if ((dict.Contains("ProviderDisplayName") == true))
             {
-                this.Brand = ((string)(ConvertUtilities.ChangeType(dict["Brand"], typeof(string), default(string))));
+                this.ProviderDisplayName = ((string)(ConvertUtilities.ChangeType(dict["ProviderDisplayName"], typeof(string), default(string))));
+            }
+            if ((dict.Contains("ProviderKey") == true))
+            {
+                this.ProviderKey = ((string)(ConvertUtilities.ChangeType(dict["ProviderKey"], typeof(string), default(string))));
+            }
+            if ((dict.Contains("ProviderName") == true))
+            {
+                this.ProviderName = ((string)(ConvertUtilities.ChangeType(dict["ProviderName"], typeof(string), default(string))));
+            }
+            if ((dict.Contains("UserId") == true))
+            {
+                this.UserId = ((System.Guid)(ConvertUtilities.ChangeType(dict["UserId"], typeof(System.Guid), CodeFluentPersistence.DefaultGuidValue)));
             }
             this.OnEntityAction(new CodeFluent.Runtime.CodeFluentEntityActionEventArgs(this, CodeFluent.Runtime.CodeFluentEntityAction.CopyFrom, false, dict));
         }
         
-        public virtual void CopyTo(ModelCodeFluent.Vehicle vehicle, bool deep)
+        public virtual void CopyTo(ModelCodeFluent.Identity.UserLogin userLogin, bool deep)
         {
-            if ((vehicle == null))
+            if ((userLogin == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("userLogin");
             }
-            vehicle.VehicleId = this.VehicleId;
-            vehicle.Brand = this.Brand;
-            this.OnEntityAction(new CodeFluent.Runtime.CodeFluentEntityActionEventArgs(this, CodeFluent.Runtime.CodeFluentEntityAction.CopyTo, false, vehicle));
+            userLogin.Id = this.Id;
+            userLogin.ProviderDisplayName = this.ProviderDisplayName;
+            userLogin.ProviderKey = this.ProviderKey;
+            userLogin.ProviderName = this.ProviderName;
+            userLogin.UserId = this.UserId;
+            this.OnEntityAction(new CodeFluent.Runtime.CodeFluentEntityActionEventArgs(this, CodeFluent.Runtime.CodeFluentEntityAction.CopyTo, false, userLogin));
         }
         
         public virtual void CopyTo(System.Collections.IDictionary dict, bool deep)
@@ -686,8 +839,11 @@ vehicle = value as ModelCodeFluent.Vehicle;
             {
                 throw new System.ArgumentNullException("dict");
             }
-            dict["VehicleId"] = this.VehicleId;
-            dict["Brand"] = this.Brand;
+            dict["Id"] = this.Id;
+            dict["ProviderDisplayName"] = this.ProviderDisplayName;
+            dict["ProviderKey"] = this.ProviderKey;
+            dict["ProviderName"] = this.ProviderName;
+            dict["UserId"] = this.UserId;
             this.OnEntityAction(new CodeFluent.Runtime.CodeFluentEntityActionEventArgs(this, CodeFluent.Runtime.CodeFluentEntityAction.CopyTo, false, dict));
         }
         

@@ -7,7 +7,7 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-// CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 21:21. Build: 1.0.61214.0842
+// CodeFluent Entities generated (http://www.softfluent.com). Date: Saturday, 19 November 2016 13:35. Build: 1.0.61214.0842
 namespace ModelCodeFluent.Web
 {
 	

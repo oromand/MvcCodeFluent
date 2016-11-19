@@ -14,7 +14,7 @@ namespace ModelCodeFluent.Web
     using CodeFluent.Runtime.Utilities;
     
     
-    // CodeFluent Entities generated (http://www.softfluent.com). Date: Friday, 18 November 2016 21:21.
+    // CodeFluent Entities generated (http://www.softfluent.com). Date: Saturday, 19 November 2016 13:35.
     [System.CodeDom.Compiler.GeneratedCodeAttribute("CodeFluent Entities", "1.0.61214.0842")]
     public partial class HttpHandler : CodeFluent.Runtime.Web.UI.BinaryLargeObjectHttpHandler
     {

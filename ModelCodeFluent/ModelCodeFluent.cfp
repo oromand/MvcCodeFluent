@@ -10,4 +10,60 @@
   <cf:producer name="SQL Server" typeName="CodeFluent.Producers.SqlServer.SqlServerProducer, CodeFluent.Producers.SqlServer">
     <cf:configuration produceViews="true" targetDirectory="..\Persistence" cfx:targetProject="..\Persistence\Persistence.sqlproj" cfx:targetProjectLayout="Update, DontRemove" connectionString="Server=OLIVIER774B\SQLEXPRESS;Database=ModelCodeFluent;Integrated Security=true;Application Name=ModelCodeFluent" />
   </cf:producer>
+  <cf:producer name="Asp.Net Identity" typeName="SoftFluent.AspNetIdentity.AspNetIdentityProducer, SoftFluent.AspNetIdentity">
+    <cf:configuration targetDirectory="..\Model" implementQueryableRoleStore="True" implementQueryableUserStore="True" cfx:targetProjectLayout="Update" />
+  </cf:producer>
+  <cf:entity name="User" d2p1:entityType="User" namespace="ModelCodeFluent.Identity" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="UserKey" key="true" collectionKey="false" />
+    <cf:property name="UserName" d2p1:propertyType="UserName" collectionKey="true" />
+    <cf:property name="CreationDateUTC" d2p1:propertyType="UserCreationDate" usePersistenceDefaultValue="false" nullable="false" typeName="datetime" />
+    <cf:property name="Email" d2p1:propertyType="UserEmail" typeName="email" uiType="EMail" unique="true" />
+    <cf:property name="EmailConfirmed" d2p1:propertyType="UserEmailConfirmed" nullable="false" typeName="bool" />
+    <cf:property name="PhoneNumber" d2p1:propertyType="UserPhoneNumber" unique="false" />
+    <cf:property name="PhoneNumberConfirmed" d2p1:propertyType="UserPhoneNumberConfirmed" nullable="false" typeName="bool" />
+    <cf:property name="Password" d2p1:propertyType="UserPassword" typeName="password" uiType="Password" />
+    <cf:property name="LastPasswordChangeDate" d2p1:propertyType="UserLastPasswordChangeDate" typeName="datetime" />
+    <cf:property name="AccessFailedCount" d2p1:propertyType="UserFailedPasswordAttemptCount" usePersistenceDefaultValue="false" nullable="false" typeName="int" />
+    <cf:property name="AccessFailedWindowStart" d2p1:propertyType="UserFailedPasswordAttemptWindowStart" typeName="datetime" />
+    <cf:property name="LockoutEnabled" d2p1:propertyType="UserLockoutEnabled" nullable="false" typeName="bool" />
+    <cf:property name="LockoutEndDateUtc" d2p1:propertyType="UserLockoutEndDate" serializationNullable="true" modelNullable="true" typeName="datetime" />
+    <cf:property name="LastProfileUpdateDate" d2p1:propertyType="UserLastProfileUpdateDate" typeName="datetime" />
+    <cf:property name="SecurityStamp" d2p1:propertyType="UserSecurityStamp" nullable="false" />
+    <cf:property name="TwoFactorEnabled" d2p1:propertyType="UserTwoFactorEnabled" nullable="false" typeName="bool" />
+    <cf:property name="Roles" d2p1:propertyType="UserRoles" typeName="{0}.Identity.RoleCollection" relationPropertyName="Users" />
+    <cf:property name="Claims" d2p1:propertyType="UserClaims" cascadeDelete="Before" typeName="{0}.Identity.UserClaimCollection" relationPropertyName="User" />
+    <cf:property name="Logins" d2p1:propertyType="UserLogins" cascadeDelete="Before" typeName="{0}.Identity.UserLoginCollection" relationPropertyName="User" />
+    <cf:method name="LoadByUserLoginInfo" body="LOADONE(string providerKey, string providerName) WHERE Logins.ProviderKey = @providerKey AND Logins.ProviderName = @providerName" d2p1:methodType="LoadUserByUserLoginInfo" />
+    <cf:method name="LoadByEmail" body="LOADONE(Email) WHERE Email = @Email" d2p1:methodType="LoadUserByEmail" />
+    <cf:property name="PasswordHash" persistent="false" />
+  </cf:entity>
+  <cf:entity name="Role" d2p1:entityType="Role" namespace="ModelCodeFluent.Identity" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="RoleKey" key="true" collectionKey="false" />
+    <cf:property name="Name" d2p1:propertyType="RoleName" collectionKey="true" />
+    <cf:property name="Users" d2p1:propertyType="RoleUsers" typeName="{0}.Identity.UserCollection" relationPropertyName="Roles" />
+    <cf:property name="Claims" d2p1:propertyType="RoleClaims" cascadeDelete="Before" typeName="{0}.Identity.RoleClaimCollection" relationPropertyName="Role" />
+  </cf:entity>
+  <cf:entity name="UserClaim" d2p1:entityType="UserClaim" namespace="ModelCodeFluent.Identity" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="UserClaimKey" key="true" />
+    <cf:property name="Type" d2p1:propertyType="UserClaimType" nullable="false" />
+    <cf:property name="Value" d2p1:propertyType="UserClaimValue" />
+    <cf:property name="ValueType" d2p1:propertyType="UserClaimValueType" />
+    <cf:property name="Issuer" d2p1:propertyType="UserClaimIssuer" />
+    <cf:property name="OriginalIssuer" d2p1:propertyType="UserClaimOriginalIssuer" />
+    <cf:property name="User" d2p1:propertyType="UserClaimUser" nullable="false" typeName="{0}.Identity.User" relationPropertyName="Claims" />
+  </cf:entity>
+  <cf:entity name="UserLogin" d2p1:entityType="UserLogin" namespace="ModelCodeFluent.Identity" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="UserLoginKey" nullable="false" />
+    <cf:property name="ProviderName" d2p1:propertyType="UserLoginProviderName" nullable="false" />
+    <cf:property name="ProviderKey" d2p1:propertyType="UserLoginProviderKey" nullable="false" />
+    <cf:property name="ProviderDisplayName" d2p1:propertyType="UserLoginProviderDisplayName" nullable="false" />
+    <cf:property name="User" d2p1:propertyType="UserLoginUser" nullable="false" typeName="{0}.Identity.User" relationPropertyName="Logins" />
+  </cf:entity>
+  <cf:entity name="RoleClaim" d2p1:entityType="RoleClaim" namespace="ModelCodeFluent.Identity" xmlns:d2p1="http://www.softfluent.com/codefluent/producers.aspNetIdentityProducer/2014/1">
+    <cf:property name="Id" d2p1:propertyType="RoleClaimKey" nullable="false" />
+    <cf:property name="Type" d2p1:propertyType="RoleClaimClaimType" nullable="false" />
+    <cf:property name="Value" d2p1:propertyType="RoleClaimClaimValue" />
+    <cf:property name="ValueType" d2p1:propertyType="RoleClaimClaimValueType" />
+    <cf:property name="Role" d2p1:propertyType="RoleClaimRole" nullable="false" typeName="{0}.Identity.Role" relationPropertyName="Claims" />
+  </cf:entity>
 </cf:project>

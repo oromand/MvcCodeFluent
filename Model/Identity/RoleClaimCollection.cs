@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelCodeFluent
+namespace ModelCodeFluent.Identity
 {
     using CodeFluent.Runtime;
     using CodeFluent.Runtime.Utilities;
@@ -21,7 +21,7 @@ namespace ModelCodeFluent
     [System.ComponentModel.DataObjectAttribute()]
     [System.Diagnostics.DebuggerDisplayAttribute("Count={Count}")]
     [System.ComponentModel.TypeConverterAttribute(typeof(CodeFluent.Runtime.Design.CollectionTypeConverter))]
-    public partial class VehicleCollection : System.Collections.IList, System.Collections.ICollection, CodeFluent.Runtime.ICodeFluentSet, System.Collections.Generic.IList<ModelCodeFluent.Vehicle>, System.Collections.Generic.ICollection<ModelCodeFluent.Vehicle>, System.ComponentModel.IRaiseItemChangedEvents, System.ICloneable, System.ComponentModel.INotifyPropertyChanged, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.IBindingList, System.ComponentModel.ICancelAddNew
+    public partial class RoleClaimCollection : System.Collections.IList, System.Collections.ICollection, CodeFluent.Runtime.ICodeFluentSet, System.Collections.Generic.IList<ModelCodeFluent.Identity.RoleClaim>, System.Collections.Generic.ICollection<ModelCodeFluent.Identity.RoleClaim>, System.ComponentModel.IRaiseItemChangedEvents, System.ICloneable, System.ComponentModel.INotifyPropertyChanged, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.IBindingList, System.ComponentModel.ICancelAddNew
     {
         
         private bool _raisePropertyChangedEvents = true;
@@ -29,10 +29,10 @@ namespace ModelCodeFluent
         private bool _raiseCollectionChangedEvents = true;
         
         [System.NonSerializedAttribute()]
-        private System.Collections.Generic.List<ModelCodeFluent.Vehicle> _baseList = new System.Collections.Generic.List<ModelCodeFluent.Vehicle>();
+        private System.Collections.Generic.List<ModelCodeFluent.Identity.RoleClaim> _baseList = new System.Collections.Generic.List<ModelCodeFluent.Identity.RoleClaim>();
         
         [System.NonSerializedAttribute()]
-        private System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Vehicle> _baseTable = new System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Vehicle>();
+        private System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Identity.RoleClaim> _baseTable = new System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Identity.RoleClaim>();
         
         [System.NonSerializedAttribute()]
         private System.Collections.Hashtable _relations = new System.Collections.Hashtable();
@@ -40,10 +40,13 @@ namespace ModelCodeFluent
         private int _maxCount = 2147483647;
         
         [System.NonSerializedAttribute()]
+        private ModelCodeFluent.Identity.Role _claimsRoleRole;
+        
+        [System.NonSerializedAttribute()]
         private int _addNewPos = -1;
         
         [System.NonSerializedAttribute()]
-        private CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Vehicle> _blm2933840664;
+        private CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Identity.RoleClaim> _blm3707740824;
         
         private bool _raiseListChangedEvents = true;
         
@@ -51,9 +54,15 @@ namespace ModelCodeFluent
 
         event System.Collections.Specialized.NotifyCollectionChangedEventHandler System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged{add{_h2943838991+=value;}remove{_h2943838991-=value;}}
         
-        public VehicleCollection()
+        public RoleClaimCollection()
         {
-            this._blm2933840664 = new CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Vehicle>(this);
+            this._blm3707740824 = new CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Identity.RoleClaim>(this);
+        }
+        
+        public RoleClaimCollection(ModelCodeFluent.Identity.Role claimsRoleRole)
+        {
+            this._blm3707740824 = new CodeFluent.Runtime.Utilities.BindingListManager<ModelCodeFluent.Identity.RoleClaim>(this);
+            this._claimsRoleRole = claimsRoleRole;
         }
         
         [System.ComponentModel.BrowsableAttribute(false)]
@@ -83,7 +92,7 @@ namespace ModelCodeFluent
         }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        protected System.Collections.Generic.List<ModelCodeFluent.Vehicle> BaseList
+        protected System.Collections.Generic.List<ModelCodeFluent.Identity.RoleClaim> BaseList
         {
             get
             {
@@ -92,7 +101,7 @@ namespace ModelCodeFluent
         }
         
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        protected System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Vehicle> BaseTable
+        protected System.Collections.Generic.Dictionary<System.Guid, ModelCodeFluent.Identity.RoleClaim> BaseTable
         {
             get
             {
@@ -122,11 +131,20 @@ namespace ModelCodeFluent
             }
         }
         
-        public ModelCodeFluent.Vehicle this[int index]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ModelCodeFluent.Identity.Role ClaimsRoleRole
         {
             get
             {
-                return ((ModelCodeFluent.Vehicle)(this.BaseList[index]));
+                return this._claimsRoleRole;
+            }
+        }
+        
+        public ModelCodeFluent.Identity.RoleClaim this[int index]
+        {
+            get
+            {
+                return ((ModelCodeFluent.Identity.RoleClaim)(this.BaseList[index]));
             }
             set
             {
@@ -143,37 +161,37 @@ namespace ModelCodeFluent
             }
             set
             {
-                this.BaseList[index] = ((ModelCodeFluent.Vehicle)(value));
+                this.BaseList[index] = ((ModelCodeFluent.Identity.RoleClaim)(value));
             }
         }
         
-        public ModelCodeFluent.Vehicle this[System.Guid vehicleId]
+        public ModelCodeFluent.Identity.RoleClaim this[System.Guid id]
         {
             get
             {
-                if ((vehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+                if ((id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
                 {
-                    throw new System.ArgumentNullException("vehicleId");
+                    throw new System.ArgumentNullException("id");
                 }
-                ModelCodeFluent.Vehicle i = this.TryGetValue(vehicleId);
+                ModelCodeFluent.Identity.RoleClaim i = this.TryGetValue(id);
                 return i;
             }
             set
             {
-                if ((vehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+                if ((id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
                 {
-                    throw new System.ArgumentNullException("vehicleId");
+                    throw new System.ArgumentNullException("id");
                 }
                 if ((value == null))
                 {
-                    ModelCodeFluent.Vehicle vehicle = this.TryGetValue(vehicleId);
-                    if ((vehicle != null))
+                    ModelCodeFluent.Identity.RoleClaim roleClaim = this.TryGetValue(id);
+                    if ((roleClaim != null))
                     {
-                        this.Remove(vehicle);
+                        this.Remove(roleClaim);
                     }
                     return;
                 }
-                ModelCodeFluent.Vehicle existing = this.TryGetValue(value.VehicleId);
+                ModelCodeFluent.Identity.RoleClaim existing = this.TryGetValue(value.Id);
                 if ((existing != null))
                 {
                     this.Remove(existing);
@@ -243,7 +261,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.AllowEdit;
+                return this._blm3707740824.AllowEdit;
             }
         }
         
@@ -251,7 +269,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.AllowNew;
+                return this._blm3707740824.AllowNew;
             }
         }
         
@@ -259,7 +277,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.AllowRemove;
+                return this._blm3707740824.AllowRemove;
             }
         }
         
@@ -267,7 +285,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.IsSorted;
+                return this._blm3707740824.IsSorted;
             }
         }
         
@@ -275,7 +293,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SortDirection;
+                return this._blm3707740824.SortDirection;
             }
         }
         
@@ -283,7 +301,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SortProperty;
+                return this._blm3707740824.SortProperty;
             }
         }
         
@@ -299,7 +317,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SupportsSearching;
+                return this._blm3707740824.SupportsSearching;
             }
         }
         
@@ -307,7 +325,7 @@ namespace ModelCodeFluent
         {
             get
             {
-                return this._blm2933840664.SupportsSorting;
+                return this._blm3707740824.SupportsSorting;
             }
         }
         
@@ -358,54 +376,58 @@ namespace ModelCodeFluent
             this.OnPropertyChanged(new System.ComponentModel.PropertyChangedEventArgs("Item[]"));
         }
         
-        protected virtual void Relate(ModelCodeFluent.Vehicle item, CodeFluent.Runtime.CodeFluentRelationType relationType)
+        protected virtual void Relate(ModelCodeFluent.Identity.RoleClaim item, CodeFluent.Runtime.CodeFluentRelationType relationType)
         {
             ((CodeFluent.Runtime.ICodeFluentSet)(this)).Relations[item] = relationType;
         }
         
-        public int Add(ModelCodeFluent.Vehicle vehicle)
+        public int Add(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
             int localAdd = this.BaseList.Count;
-            this.BaseAdd(vehicle);
+            this.BaseAdd(roleClaim);
             return localAdd;
         }
         
-        protected virtual int BaseAdd(ModelCodeFluent.Vehicle vehicle)
+        protected virtual int BaseAdd(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("roleClaim");
             }
-            if ((vehicle.VehicleId.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            if ((roleClaim.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
             {
-                CodeFluent.Runtime.CodeFluentRuntimeException.Throw("invalidEntityKey", "VehicleId", "vehicle", "ModelCodeFluent.Vehicle");
+                CodeFluent.Runtime.CodeFluentRuntimeException.Throw("invalidEntityKey", "Id", "roleClaim", "ModelCodeFluent.Identity.RoleClaim");
             }
             try
             {
-                this.BaseTable.Add(vehicle.VehicleId, vehicle);
+                this.BaseTable.Add(roleClaim.Id, roleClaim);
             }
             catch (System.ArgumentNullException ane)
             {
-                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.VehicleCollection", vehicle.EntityKey), ane);
+                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.Identity.RoleClaimCollection", roleClaim.EntityKey), ane);
             }
             catch (System.ArgumentException ae)
             {
-                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.VehicleCollection", vehicle.VehicleId), ae);
+                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.Identity.RoleClaimCollection", roleClaim.Id), ae);
             }
-            vehicle.KeyChanged += new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+            roleClaim.KeyChanged += new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+            if ((this._claimsRoleRole != null))
+            {
+                roleClaim.Role = this._claimsRoleRole;
+            }
             int localAdd = this.BaseList.Count;
-            this.BaseList.Add(vehicle);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, vehicle, localAdd));
+            this.BaseList.Add(roleClaim);
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, roleClaim, localAdd));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemAdded, localAdd));
             return localAdd;
         }
         
         int System.Collections.IList.Add(object value)
         {
-            ModelCodeFluent.Vehicle vehicle = null;
+            ModelCodeFluent.Identity.RoleClaim roleClaim = null;
             try
             {
-                vehicle = ((ModelCodeFluent.Vehicle)(value));
+                roleClaim = ((ModelCodeFluent.Identity.RoleClaim)(value));
             }
             catch (System.InvalidCastException )
             {
@@ -428,28 +450,28 @@ namespace ModelCodeFluent
                     throw new System.ArgumentException("value");
                 }
             }
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
                 throw new System.ArgumentException("value");
             }
-            int localAdd = this.Add(vehicle);
+            int localAdd = this.Add(roleClaim);
             return localAdd;
         }
         
-        void System.Collections.Generic.ICollection<ModelCodeFluent.Vehicle>.Add(ModelCodeFluent.Vehicle vehicle)
+        void System.Collections.Generic.ICollection<ModelCodeFluent.Identity.RoleClaim>.Add(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            this.BaseAdd(vehicle);
+            this.BaseAdd(roleClaim);
         }
         
-        public virtual ModelCodeFluent.Vehicle AddByEntityKey(string key)
+        public virtual ModelCodeFluent.Identity.RoleClaim AddByEntityKey(string key)
         {
-            ModelCodeFluent.Vehicle vehicle = ModelCodeFluent.Vehicle.LoadByEntityKey(key);
-            if (((vehicle != null) 
-                        && (this.Contains(vehicle) == false)))
+            ModelCodeFluent.Identity.RoleClaim roleClaim = ModelCodeFluent.Identity.RoleClaim.LoadByEntityKey(key);
+            if (((roleClaim != null) 
+                        && (this.Contains(roleClaim) == false)))
             {
-                this.Add(vehicle);
+                this.Add(roleClaim);
             }
-            return vehicle;
+            return roleClaim;
         }
         
         public void Sort()
@@ -457,17 +479,17 @@ namespace ModelCodeFluent
             this.Sort(null);
         }
         
-        public virtual void Sort(System.Collections.Generic.IComparer<ModelCodeFluent.Vehicle> comparer)
+        public virtual void Sort(System.Collections.Generic.IComparer<ModelCodeFluent.Identity.RoleClaim> comparer)
         {
             this.BaseList.Sort(comparer);
         }
         
-        public void CopyTo(ModelCodeFluent.Vehicle[] array, int index)
+        public void CopyTo(ModelCodeFluent.Identity.RoleClaim[] array, int index)
         {
             this.BaseCopyTo(array, index);
         }
         
-        protected virtual void BaseCopyTo(ModelCodeFluent.Vehicle[] array, int index)
+        protected virtual void BaseCopyTo(ModelCodeFluent.Identity.RoleClaim[] array, int index)
         {
             this.BaseList.CopyTo(array, index);
         }
@@ -477,85 +499,89 @@ namespace ModelCodeFluent
             CodeFluent.Runtime.Utilities.ConvertUtilities.CopyTo(this, array, index);
         }
         
-        public bool Contains(ModelCodeFluent.Vehicle vehicle)
+        public bool Contains(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            bool localContains = this.BaseContains(vehicle);
+            bool localContains = this.BaseContains(roleClaim);
             return localContains;
         }
         
-        protected virtual bool BaseContains(ModelCodeFluent.Vehicle vehicle)
+        protected virtual bool BaseContains(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
                 return false;
             }
-            bool localContains = this.BaseTable.ContainsKey(vehicle.VehicleId);
+            bool localContains = this.BaseTable.ContainsKey(roleClaim.Id);
             return localContains;
         }
         
         bool System.Collections.IList.Contains(object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            return this.Contains(vehicle);
+            ModelCodeFluent.Identity.RoleClaim roleClaim;
+			roleClaim = value as ModelCodeFluent.Identity.RoleClaim;
+            return this.Contains(roleClaim);
         }
         
-        public int IndexOf(ModelCodeFluent.Vehicle vehicle)
+        public int IndexOf(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            int localIndexOf = this.BaseIndexOf(vehicle);
+            int localIndexOf = this.BaseIndexOf(roleClaim);
             return localIndexOf;
         }
         
-        protected virtual int BaseIndexOf(ModelCodeFluent.Vehicle vehicle)
+        protected virtual int BaseIndexOf(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
                 return -1;
             }
-            int localIndexOf = this.BaseList.IndexOf(vehicle);
+            int localIndexOf = this.BaseList.IndexOf(roleClaim);
             return localIndexOf;
         }
         
         int System.Collections.IList.IndexOf(object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            return this.IndexOf(vehicle);
+            ModelCodeFluent.Identity.RoleClaim roleClaim;
+			roleClaim = value as ModelCodeFluent.Identity.RoleClaim;
+            return this.IndexOf(roleClaim);
         }
         
-        public void Insert(int index, ModelCodeFluent.Vehicle vehicle)
+        public void Insert(int index, ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            this.BaseInsert(index, vehicle);
+            this.BaseInsert(index, roleClaim);
         }
         
-        protected virtual void BaseInsert(int index, ModelCodeFluent.Vehicle vehicle)
+        protected virtual void BaseInsert(int index, ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("roleClaim");
             }
             try
             {
-                this.BaseTable.Add(vehicle.VehicleId, vehicle);
+                this.BaseTable.Add(roleClaim.Id, roleClaim);
             }
             catch (System.ArgumentNullException ane)
             {
-                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.VehicleCollection", vehicle.EntityKey), ane);
+                throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.Identity.RoleClaimCollection", roleClaim.EntityKey), ane);
             }
             catch (System.ArgumentException ae)
             {
-                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.VehicleCollection", vehicle.VehicleId), ae);
+                throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.Identity.RoleClaimCollection", roleClaim.Id), ae);
             }
-            this.BaseList.Insert(index, vehicle);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, vehicle, index));
+            this.BaseList.Insert(index, roleClaim);
+            if ((this._claimsRoleRole != null))
+            {
+                roleClaim.Role = this._claimsRoleRole;
+            }
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Add, roleClaim, index));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemAdded, index));
         }
         
         void System.Collections.IList.Insert(int index, object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            this.Insert(index, vehicle);
+            ModelCodeFluent.Identity.RoleClaim roleClaim;
+			roleClaim = value as ModelCodeFluent.Identity.RoleClaim;
+            this.Insert(index, roleClaim);
         }
         
         public virtual void Clear()
@@ -564,59 +590,67 @@ namespace ModelCodeFluent
             int count = this.Count;
             for (index = 0; (index < count); index = (index + 1))
             {
-                ModelCodeFluent.Vehicle Vehicle = this[0];
-                this.BaseRemove(Vehicle);
+                ModelCodeFluent.Identity.RoleClaim RoleClaim = this[0];
+                this.BaseRemove(RoleClaim);
             }
             this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Refresh, null));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.Reset, -1));
         }
         
-        public bool Remove(ModelCodeFluent.Vehicle vehicle)
+        public bool Remove(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            return this.BaseRemove(vehicle);
+            return this.BaseRemove(roleClaim);
         }
         
-        protected virtual bool BaseRemove(ModelCodeFluent.Vehicle vehicle)
+        protected virtual bool BaseRemove(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
-                throw new System.ArgumentNullException("vehicle");
+                throw new System.ArgumentNullException("roleClaim");
             }
-            int index = this.IndexOf(vehicle);
-            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Vehicle>.ListChangedTypeDeleting)), index));
+            int index = this.IndexOf(roleClaim);
+            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Identity.RoleClaim>.ListChangedTypeDeleting)), index));
             bool ret;
-            ret = this.BaseList.Remove(vehicle);
-            vehicle.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
-            ret = this.BaseTable.Remove(vehicle.VehicleId);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, vehicle, index));
+            ret = this.BaseList.Remove(roleClaim);
+            roleClaim.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+            ret = this.BaseTable.Remove(roleClaim.Id);
+            if ((this._claimsRoleRole != null))
+            {
+                roleClaim.Role = null;
+            }
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, roleClaim, index));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemDeleted, index));
             return ret;
         }
         
         void System.Collections.IList.Remove(object value)
         {
-            ModelCodeFluent.Vehicle vehicle;
-			vehicle = value as ModelCodeFluent.Vehicle;
-            this.Remove(vehicle);
+            ModelCodeFluent.Identity.RoleClaim roleClaim;
+			roleClaim = value as ModelCodeFluent.Identity.RoleClaim;
+            this.Remove(roleClaim);
         }
         
         public virtual void RemoveAt(int index)
         {
-            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Vehicle>.ListChangedTypeDeleting)), index));
-            ModelCodeFluent.Vehicle vehicle = this.BaseList[index];
-            if ((vehicle != null))
+            this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(((System.ComponentModel.ListChangedType)(CodeFluent.Runtime.Utilities.SortableBindingList<ModelCodeFluent.Identity.RoleClaim>.ListChangedTypeDeleting)), index));
+            ModelCodeFluent.Identity.RoleClaim roleClaim = this.BaseList[index];
+            if ((roleClaim != null))
             {
-                vehicle.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
-                this.BaseTable.Remove(vehicle.VehicleId);
+                roleClaim.KeyChanged -= new System.EventHandler<CodeFluent.Runtime.Utilities.KeyChangedEventArgs<System.Guid>>(this.OnItemKeyChanged);
+                this.BaseTable.Remove(roleClaim.Id);
+            }
+            if ((this._claimsRoleRole != null))
+            {
+                roleClaim.Role = null;
             }
             this.BaseList.RemoveAt(index);
-            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, vehicle, index));
+            this.OnCollectionChanged(new CodeFluent.Runtime.Utilities.IndexedCollectionChangeEventArgs(System.ComponentModel.CollectionChangeAction.Remove, roleClaim, index));
             this.OnListChanged(new System.ComponentModel.ListChangedEventArgs(System.ComponentModel.ListChangedType.ItemDeleted, index));
         }
         
-        public virtual System.Collections.Generic.IEnumerator<ModelCodeFluent.Vehicle> GetEnumerator()
+        public virtual System.Collections.Generic.IEnumerator<ModelCodeFluent.Identity.RoleClaim> GetEnumerator()
         {
-            System.Collections.Generic.IEnumerator<ModelCodeFluent.Vehicle> e = this.BaseList.GetEnumerator();
+            System.Collections.Generic.IEnumerator<ModelCodeFluent.Identity.RoleClaim> e = this.BaseList.GetEnumerator();
             return e;
         }
         
@@ -625,12 +659,12 @@ namespace ModelCodeFluent
             return this.BaseList.GetEnumerator();
         }
         
-        private ModelCodeFluent.Vehicle TryGetValue(System.Guid key)
+        private ModelCodeFluent.Identity.RoleClaim TryGetValue(System.Guid key)
         {
-            ModelCodeFluent.Vehicle vehicle;
-            if ((this.BaseTable.TryGetValue(key, out vehicle) == true))
+            ModelCodeFluent.Identity.RoleClaim roleClaim;
+            if ((this.BaseTable.TryGetValue(key, out roleClaim) == true))
             {
-                return vehicle;
+                return roleClaim;
             }
             return null;
         }
@@ -640,11 +674,11 @@ namespace ModelCodeFluent
             int index;
             for (index = (this.Count - 1); (index >= 0); index = (index - 1))
             {
-                ModelCodeFluent.Vehicle vehicle = this[index];
-                vehicle.Save();
-                if ((vehicle.EntityState == CodeFluent.Runtime.CodeFluentEntityState.Deleted))
+                ModelCodeFluent.Identity.RoleClaim roleClaim = this[index];
+                roleClaim.Save();
+                if ((roleClaim.EntityState == CodeFluent.Runtime.CodeFluentEntityState.Deleted))
                 {
-                    this.Remove(vehicle);
+                    this.Remove(roleClaim);
                 }
             }
         }
@@ -670,6 +704,7 @@ namespace ModelCodeFluent
                     pageSize = int.MaxValue;
                 }
             }
+            this._claimsRoleRole = null;
             this.BaseList.Clear();
             this.BaseTable.Clear();
             int count = 0;
@@ -682,20 +717,20 @@ namespace ModelCodeFluent
                 readCount = (readCount + 1);
                 if ((CodeFluent.Runtime.CodeFluentPersistence.CanAddEntity(pageIndex, pageSize, pageOptions, readCount) == true))
                 {
-                    ModelCodeFluent.Vehicle vehicle = new ModelCodeFluent.Vehicle();
-                    ((CodeFluent.Runtime.ICodeFluentEntity)(vehicle)).ReadRecord(reader);
-                    if ((this.BaseContains(vehicle) == false))
+                    ModelCodeFluent.Identity.RoleClaim roleClaim = new ModelCodeFluent.Identity.RoleClaim();
+                    ((CodeFluent.Runtime.ICodeFluentEntity)(roleClaim)).ReadRecord(reader);
+                    if ((this.BaseContains(roleClaim) == false))
                     {
-                        this.BaseAdd(vehicle);
+                        this.BaseAdd(roleClaim);
                         count = (count + 1);
                     }
-                    vehicle.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+                    roleClaim.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
                 }
             }
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.VehicleCollection PageLoadAll(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions)
+        public static ModelCodeFluent.Identity.RoleClaimCollection PageLoadAll(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions)
         {
             if ((pageIndex < 0))
             {
@@ -712,11 +747,11 @@ namespace ModelCodeFluent
                     pageSize = int.MaxValue;
                 }
             }
-            ModelCodeFluent.VehicleCollection ret = new ModelCodeFluent.VehicleCollection();
+            ModelCodeFluent.Identity.RoleClaimCollection ret = new ModelCodeFluent.Identity.RoleClaimCollection();
             System.Data.IDataReader reader = null;
             try
             {
-                reader = ModelCodeFluent.VehicleCollection.PageDataLoadAll(pageOptions);
+                reader = ModelCodeFluent.Identity.RoleClaimCollection.PageDataLoadAll(pageOptions);
                 if ((reader == null))
                 {
                     return ret;
@@ -735,16 +770,16 @@ namespace ModelCodeFluent
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.VehicleCollection LoadAll()
+        public static ModelCodeFluent.Identity.RoleClaimCollection LoadAll()
         {
-            ModelCodeFluent.VehicleCollection ret = ModelCodeFluent.VehicleCollection.PageLoadAll(int.MinValue, int.MaxValue, null);
+            ModelCodeFluent.Identity.RoleClaimCollection ret = ModelCodeFluent.Identity.RoleClaimCollection.PageLoadAll(int.MinValue, int.MaxValue, null);
             return ret;
         }
         
         public static System.Data.IDataReader PageDataLoadAll(CodeFluent.Runtime.PageOptions pageOptions)
         {
             CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
-            persistence.CreateStoredProcedureCommand(null, "Vehicle", "LoadAll");
+            persistence.CreateStoredProcedureCommand(null, "RoleClaim", "LoadAll");
             if ((pageOptions != null))
             {
                 System.Collections.IEnumerator enumerator = pageOptions.OrderByArguments.GetEnumerator();
@@ -764,7 +799,145 @@ namespace ModelCodeFluent
         
         public static System.Data.IDataReader DataLoadAll()
         {
-            System.Data.IDataReader reader = ModelCodeFluent.VehicleCollection.PageDataLoadAll(null);
+            System.Data.IDataReader reader = ModelCodeFluent.Identity.RoleClaimCollection.PageDataLoadAll(null);
+            return reader;
+        }
+        
+        private void LoadByRole(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions, System.Data.IDataReader reader, ModelCodeFluent.Identity.Role role)
+        {
+            if ((reader == null))
+            {
+                throw new System.ArgumentNullException("reader");
+            }
+            if ((pageIndex < 0))
+            {
+                pageIndex = 0;
+            }
+            if ((pageSize < 0))
+            {
+                if ((pageOptions != null))
+                {
+                    pageSize = pageOptions.DefaultPageSize;
+                }
+                else
+                {
+                    pageSize = int.MaxValue;
+                }
+            }
+            CodeFluent.Runtime.CodeFluentEntityState roleState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+            if ((role != null))
+            {
+                roleState = role.EntityState;
+            }
+            this._claimsRoleRole = role;
+            this.BaseList.Clear();
+            this.BaseTable.Clear();
+            int count = 0;
+            int readCount = 0;
+            bool readerRead;
+            for (readerRead = reader.Read(); ((readerRead == true) 
+                        && ((count < this.MaxCount) 
+                        && (count < pageSize))); readerRead = reader.Read())
+            {
+                readCount = (readCount + 1);
+                if ((CodeFluent.Runtime.CodeFluentPersistence.CanAddEntity(pageIndex, pageSize, pageOptions, readCount) == true))
+                {
+                    ModelCodeFluent.Identity.RoleClaim roleClaim = new ModelCodeFluent.Identity.RoleClaim();
+                    ((CodeFluent.Runtime.ICodeFluentEntity)(roleClaim)).ReadRecord(reader);
+                    if ((this.BaseContains(roleClaim) == false))
+                    {
+                        this.BaseAdd(roleClaim);
+                        count = (count + 1);
+                    }
+                    roleClaim.EntityState = CodeFluent.Runtime.CodeFluentEntityState.Unchanged;
+                }
+            }
+            if ((role != null))
+            {
+                role.EntityState = roleState;
+            }
+        }
+        
+        [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
+        public static ModelCodeFluent.Identity.RoleClaimCollection PageLoadByRole(int pageIndex, int pageSize, CodeFluent.Runtime.PageOptions pageOptions, ModelCodeFluent.Identity.Role role)
+        {
+            if ((pageIndex < 0))
+            {
+                pageIndex = 0;
+            }
+            if ((pageSize < 0))
+            {
+                if ((pageOptions != null))
+                {
+                    pageSize = pageOptions.DefaultPageSize;
+                }
+                else
+                {
+                    pageSize = int.MaxValue;
+                }
+            }
+            ModelCodeFluent.Identity.RoleClaimCollection ret = new ModelCodeFluent.Identity.RoleClaimCollection();
+            System.Data.IDataReader reader = null;
+            try
+            {
+                reader = ModelCodeFluent.Identity.RoleClaimCollection.PageDataLoadByRole(pageOptions, role);
+                if ((reader == null))
+                {
+                    return ret;
+                }
+                ret.LoadByRole(pageIndex, pageSize, pageOptions, reader, role);
+            }
+            finally
+            {
+                if ((reader != null))
+                {
+                    reader.Dispose();
+                }
+                CodeFluent.Runtime.CodeFluentPersistence.CompleteCommand(ModelCodeFluent.Constants.ModelCodeFluentStoreName);
+            }
+            return ret;
+        }
+        
+        [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
+        public static ModelCodeFluent.Identity.RoleClaimCollection LoadByRole(ModelCodeFluent.Identity.Role role)
+        {
+            ModelCodeFluent.Identity.RoleClaimCollection ret = ModelCodeFluent.Identity.RoleClaimCollection.PageLoadByRole(int.MinValue, int.MaxValue, null, role);
+            return ret;
+        }
+        
+        public static System.Data.IDataReader PageDataLoadByRole(CodeFluent.Runtime.PageOptions pageOptions, ModelCodeFluent.Identity.Role role)
+        {
+            if ((role == null))
+            {
+                return null;
+            }
+            if ((role.Id.Equals(CodeFluentPersistence.DefaultGuidValue) == true))
+            {
+                CodeFluent.Runtime.CodeFluentRuntimeException.Throw("invalidEntityKey", "Id", "role", "ModelCodeFluent.Identity.Role");
+            }
+            CodeFluent.Runtime.CodeFluentPersistence persistence = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence;
+            persistence.CreateStoredProcedureCommand(null, "RoleClaim", "LoadByRole");
+            persistence.AddParameter("@RoleId", role.Id, CodeFluentPersistence.DefaultGuidValue);
+            if ((pageOptions != null))
+            {
+                System.Collections.IEnumerator enumerator = pageOptions.OrderByArguments.GetEnumerator();
+                bool b;
+                int index = 0;
+                for (b = enumerator.MoveNext(); b; b = enumerator.MoveNext())
+                {
+                    CodeFluent.Runtime.OrderByArgument argument = ((CodeFluent.Runtime.OrderByArgument)(enumerator.Current));
+                    persistence.AddParameter(string.Format("@_orderBy{0}", index), argument.Name);
+                    persistence.AddParameter(string.Format("@_orderByDirection{0}", index), ((int)(argument.Direction)));
+                    index = (index + 1);
+                }
+            }
+            System.Data.IDataReader reader = CodeFluentContext.Get(ModelCodeFluent.Constants.ModelCodeFluentStoreName).Persistence.ExecuteReader();
+            return reader;
+        }
+        
+        public static System.Data.IDataReader DataLoadByRole(ModelCodeFluent.Identity.Role role)
+        {
+            System.Data.IDataReader reader = ModelCodeFluent.Identity.RoleClaimCollection.PageDataLoadByRole(null, role);
             return reader;
         }
         
@@ -793,19 +966,19 @@ namespace ModelCodeFluent
             this.BaseTrace(writer);
         }
         
-        public virtual void CopyTo(ModelCodeFluent.VehicleCollection collection, bool deep)
+        public virtual void CopyTo(ModelCodeFluent.Identity.RoleClaimCollection collection, bool deep)
         {
-            if ((typeof(System.ICloneable).IsAssignableFrom(typeof(ModelCodeFluent.Vehicle)) == false))
+            if ((typeof(System.ICloneable).IsAssignableFrom(typeof(ModelCodeFluent.Identity.RoleClaim)) == false))
             {
                 deep = false;
             }
-            System.Collections.Generic.IEnumerator<ModelCodeFluent.Vehicle> enumerator = this.GetEnumerator();
+            System.Collections.Generic.IEnumerator<ModelCodeFluent.Identity.RoleClaim> enumerator = this.GetEnumerator();
             bool b;
             for (b = enumerator.MoveNext(); b; b = enumerator.MoveNext())
             {
                 if ((deep == true))
                 {
-                    collection.Add(((ModelCodeFluent.Vehicle)(((System.ICloneable)(enumerator.Current)).Clone())));
+                    collection.Add(((ModelCodeFluent.Identity.RoleClaim)(((System.ICloneable)(enumerator.Current)).Clone())));
                 }
                 else
                 {
@@ -814,9 +987,9 @@ namespace ModelCodeFluent
             }
         }
         
-        public virtual ModelCodeFluent.VehicleCollection Clone(bool deep)
+        public virtual ModelCodeFluent.Identity.RoleClaimCollection Clone(bool deep)
         {
-            ModelCodeFluent.VehicleCollection ret = new ModelCodeFluent.VehicleCollection();
+            ModelCodeFluent.Identity.RoleClaimCollection ret = new ModelCodeFluent.Identity.RoleClaimCollection();
             this.CopyTo(ret, deep);
             return ret;
         }
@@ -847,7 +1020,7 @@ namespace ModelCodeFluent
         
         void System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor property)
         {
-            this._blm2933840664.AddIndex(property);
+            this._blm3707740824.AddIndex(property);
         }
         
         protected virtual void OnAddingNew(System.ComponentModel.AddingNewEventArgs e)
@@ -860,37 +1033,37 @@ namespace ModelCodeFluent
         
         object System.ComponentModel.IBindingList.AddNew()
         {
-            ModelCodeFluent.Vehicle add = new ModelCodeFluent.Vehicle();
+            ModelCodeFluent.Identity.RoleClaim add = new ModelCodeFluent.Identity.RoleClaim();
             System.ComponentModel.AddingNewEventArgs e = new System.ComponentModel.AddingNewEventArgs(add);
             this.OnAddingNew(e);
-            add = ((ModelCodeFluent.Vehicle)(e.NewObject));
+            add = ((ModelCodeFluent.Identity.RoleClaim)(e.NewObject));
             if ((add == null))
             {
-                add = new ModelCodeFluent.Vehicle();
+                add = new ModelCodeFluent.Identity.RoleClaim();
             }
-            add.VehicleId = System.Guid.NewGuid();
+            add.Id = System.Guid.NewGuid();
             this._addNewPos = this.Add(add);
             return add;
         }
         
         void System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor property, System.ComponentModel.ListSortDirection direction)
         {
-            this._blm2933840664.ApplySort(property, direction);
+            this._blm3707740824.ApplySort(property, direction);
         }
         
         int System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor property, object key)
         {
-            return this._blm2933840664.Find(property, key);
+            return this._blm3707740824.Find(property, key);
         }
         
         void System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor property)
         {
-            this._blm2933840664.RemoveIndex(property);
+            this._blm3707740824.RemoveIndex(property);
         }
         
         void System.ComponentModel.IBindingList.RemoveSort()
         {
-            this._blm2933840664.RemoveSort();
+            this._blm3707740824.RemoveSort();
         }
         
         protected virtual void OnListChanged(System.ComponentModel.ListChangedEventArgs e)
@@ -915,7 +1088,7 @@ namespace ModelCodeFluent
             }
         }
         
-        public void AddRange(System.Collections.Generic.IEnumerable<ModelCodeFluent.Vehicle> collection)
+        public void AddRange(System.Collections.Generic.IEnumerable<ModelCodeFluent.Identity.RoleClaim> collection)
         {
             CodeFluent.Runtime.Utilities.ConvertUtilities.AddRange(this, collection);
         }
@@ -926,7 +1099,7 @@ namespace ModelCodeFluent
             {
                 throw new System.ArgumentNullException("e");
             }
-            ModelCodeFluent.Vehicle existing;
+            ModelCodeFluent.Identity.RoleClaim existing;
             if ((this.BaseTable.TryGetValue(e.OldKey, out existing) == false))
             {
                 return;
@@ -941,48 +1114,59 @@ namespace ModelCodeFluent
                 }
                 catch (System.ArgumentNullException ane)
                 {
-                    throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.VehicleCollection", ((CodeFluent.Runtime.ICodeFluentEntity)(item)).EntityKey), ane);
+                    throw new System.ArgumentNullException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.VoidCollectionKey, "ModelCodeFluent.Identity.RoleClaimCollection", ((CodeFluent.Runtime.ICodeFluentEntity)(item)).EntityKey), ane);
                 }
                 catch (System.ArgumentException ae)
                 {
-                    throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.VehicleCollection", item.Key), ae);
+                    throw new System.ArgumentException(ModelCodeFluent.Resources.Manager.GetUserMessage(null, CodeFluent.Runtime.UserExceptionType.ItemAlreadyAdded, "ModelCodeFluent.Identity.RoleClaimCollection", item.Key), ae);
                 }
                 this.BaseTable.Remove(e.OldKey);
             }
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
-        public static ModelCodeFluent.VehicleCollection PageLoadAll(int pageIndex, int pageSize)
+        public static ModelCodeFluent.Identity.RoleClaimCollection PageLoadAll(int pageIndex, int pageSize)
         {
-            return ModelCodeFluent.VehicleCollection.PageLoadAll(pageIndex, pageSize, null);
+            return ModelCodeFluent.Identity.RoleClaimCollection.PageLoadAll(pageIndex, pageSize, null);
+        }
+        
+        [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Select, true)]
+        public static ModelCodeFluent.Identity.RoleClaimCollection PageLoadByRole(int pageIndex, int pageSize, System.Guid roleId)
+        {
+            ModelCodeFluent.Identity.Role role = ModelCodeFluent.Identity.Role.Load(roleId);
+            if ((role == null))
+            {
+                return new ModelCodeFluent.Identity.RoleClaimCollection();
+            }
+            return ModelCodeFluent.Identity.RoleClaimCollection.PageLoadByRole(pageIndex, pageSize, null, role);
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Update, true)]
-        public static bool Save(ModelCodeFluent.Vehicle vehicle)
+        public static bool Save(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
                 return false;
             }
-            bool ret = vehicle.Save();
+            bool ret = roleClaim.Save();
             return ret;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public static bool Insert(ModelCodeFluent.Vehicle vehicle)
+        public static bool Insert(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            bool ret = ModelCodeFluent.Vehicle.Save(vehicle);
+            bool ret = ModelCodeFluent.Identity.RoleClaim.Save(roleClaim);
             return ret;
         }
         
         [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public static bool Delete(ModelCodeFluent.Vehicle vehicle)
+        public static bool Delete(ModelCodeFluent.Identity.RoleClaim roleClaim)
         {
-            if ((vehicle == null))
+            if ((roleClaim == null))
             {
                 return false;
             }
-            bool ret = vehicle.Delete();
+            bool ret = roleClaim.Delete();
             return ret;
         }
     }

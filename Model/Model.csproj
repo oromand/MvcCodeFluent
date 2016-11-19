@@ -36,6 +36,10 @@
     <Reference Include="CodeFluent.Runtime.Web">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Web.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations">
       <HintPath>..\..\..\..\..\..\..\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll</HintPath>
@@ -61,6 +65,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Identity\Role.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\RoleClaim.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\RoleClaimCollection.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\RoleCollection.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\User.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\UserClaim.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\UserClaimCollection.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\UserCollection.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\UserLogin.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Identity\UserLoginCollection.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vehicle.cs">
       <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
@@ -74,6 +108,12 @@
     <Compile Include="Web\HttpHandler.cs">
       <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
     </Compile>
+    <Compile Include="Web\Security\RoleStore.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
+    <Compile Include="Web\Security\UserStore.cs">
+      <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
+    </Compile>
     <Compile Include="_cf_rt.cs">
       <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
     </Compile>
@@ -82,6 +122,10 @@
     <EmbeddedResource Include="ModelCodeFluent.ResX">
       <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

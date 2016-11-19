@@ -1,5 +1,13 @@
 ﻿<cf:project defaultNamespace="Default" partType="Surface" xmlns:cf="http://www.softfluent.com/codefluent/2005/1">
   <cf:surface name="Default">
     <cf:selector name="_all" expression="//*" />
+    <shape _type="Namespace" _key="ModelCodeFluent" Position="20,20" />
+    <shape _type="Entity" _key="ModelCodeFluent.Vehicle" Position="10,28" />
+    <shape _type="Namespace" _key="ModelCodeFluent.Identity" Position="255.735,64" ZIndex="1" />
+    <shape _type="Entity" _key="ModelCodeFluent.Identity.User" Position="10,28" ZIndex="1" />
+    <shape _type="Entity" _key="ModelCodeFluent.Identity.Role" Position="315.786666666667,28" />
+    <shape _type="Entity" _key="ModelCodeFluent.Identity.UserClaim" Position="520.566666666667,28" />
+    <shape _type="Entity" _key="ModelCodeFluent.Identity.UserLogin" Position="10,605.4" />
+    <shape _type="Entity" _key="ModelCodeFluent.Identity.RoleClaim" Position="366.875,605.4" />
   </cf:surface>
 </cf:project>

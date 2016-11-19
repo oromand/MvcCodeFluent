@@ -1,4 +1,4 @@
-<build startDate="2016-11-18T21:21:20.7591+01:00" commandLine="&quot;C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe&quot; &quot;C:\Users\olivier\Source\Repos\mvccodefluent\ModelCodeFluent\ModelCodeFluent.cfp&quot; /Log:&quot;C:\Users\olivier\Source\Repos\mvccodefluent\ModelCodeFluent\ModelCodeFluent.build.xml&quot; /hostpid:6416 /Results:&quot;C:\Users\olivier\AppData\Local\Temp\ModelCodeFluent.cfp.oop&quot; /DoNotCreateReportsOnException /DoNotShowReportsOnException /NoFlashOnError " machineName="OLIVIER774B" osVersion="Microsoft Windows NT 6.2.9200.0" currentDirectory="C:\Users\olivier\Source\Repos\mvccodefluent\ModelCodeFluent" user="OLIVIER774B\olivier" clrVersion="4.0.30319.42000" licenseUsage="Build Expirable [Date:31/12/2099 00:00:00][Licensee:oliv.rm@gmail.com]" processorCount="2" workingSet="24109056 bytes" bitness="32bits" wow64="True" optionsFlags="None" parentProcess="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" endDate="2016-11-18T21:21:24.0881+01:00" totalElapsedTime="00:00:03.3297113" numberOfEntities="1" numberOfEnumerations="0" numberOfRelations="0">
+<build startDate="2016-11-19T13:35:48.9560+01:00" commandLine="&quot;C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe&quot; &quot;C:\Users\olivier\Source\Repos\mvccodefluent\ModelCodeFluent\ModelCodeFluent.cfp&quot; /Log:&quot;C:\Users\olivier\Source\Repos\mvccodefluent\ModelCodeFluent\ModelCodeFluent.build.xml&quot; /hostpid:6416 /Results:&quot;C:\Users\olivier\AppData\Local\Temp\ModelCodeFluent.cfp.oop&quot; /DoNotCreateReportsOnException /DoNotShowReportsOnException /NoFlashOnError " machineName="OLIVIER774B" osVersion="Microsoft Windows NT 6.2.9200.0" currentDirectory="C:\Users\olivier\Source\Repos\mvccodefluent\ModelCodeFluent" user="OLIVIER774B\olivier" clrVersion="4.0.30319.42000" licenseUsage="Build Expirable [Date:31/12/2099 00:00:00][Licensee:oliv.rm@gmail.com]" processorCount="2" workingSet="24055808 bytes" bitness="32bits" wow64="True" optionsFlags="None" parentProcess="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" endDate="2016-11-19T13:35:56.0349+01:00" totalElapsedTime="00:00:07.0786752" numberOfEntities="6" numberOfEnumerations="0" numberOfRelations="8">
   <assemblies>
     <assembly fullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/mscorlib.dll" location="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" buildVersion="4.6.1055.0" fileVersion="4.6.1055.0 built by: NETFXREL2" productVersion="4.6.1055.0" />
     <assembly fullName="CodeFluent.Build4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Build4.exe" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Build4.exe" buildVersion="1.0.61214.0842" fileVersion="1.0.61214.0842" productVersion="1.0.61214.0842" />
@@ -18,6 +18,7 @@
     <assembly fullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll" location="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll" buildVersion="4.6.1084.0" fileVersion="4.6.1084.0 built by: NETFXREL3STAGE" productVersion="4.6.1084.0" />
     <assembly fullName="CodeFluent.Producers.SqlServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Producers.SqlServer.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Producers.SqlServer.dll" buildVersion="1.0.61214.0842" fileVersion="1.0.61214.0842" productVersion="1.0.61214.0842" />
     <assembly fullName="CodeFluent.Runtime.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1bb6d7cccf1045ec" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/CodeFluent.Runtime.Database.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\CodeFluent.Runtime.Database.dll" buildVersion="1.0.61214.0842" fileVersion="1.0.61214.0842" productVersion="1.0.61214.0842" />
+    <assembly fullName="SoftFluent.AspNetIdentity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" codeBase="file:///C:/Program Files (x86)/SoftFluent/CodeFluent/Modeler/SoftFluent.AspNetIdentity.DLL" location="C:\Program Files (x86)\SoftFluent\CodeFluent\Modeler\SoftFluent.AspNetIdentity.dll" fileVersion="1.0.0.0" productVersion="1.0.0.0" />
     <assembly fullName="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.Net/assembly/GAC_32/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll" location="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll" buildVersion="4.6.1055.0" fileVersion="4.6.1055.0 built by: NETFXREL2" productVersion="4.6.1055.0" />
     <assembly fullName="System.resources, Version=4.0.0.0, Culture=fr, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.resources/v4.0_4.0.0.0_fr_b77a5c561934e089/System.resources.dll" location="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_fr_b77a5c561934e089\System.resources.dll" fileVersion="4.6.79.0 built by: NETFXREL2" productVersion="4.6.79.0" />
     <assembly fullName="mscorlib.resources, Version=4.0.0.0, Culture=fr, PublicKeyToken=b77a5c561934e089" codeBase="file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/mscorlib.resources/v4.0_4.0.0.0_fr_b77a5c561934e089/mscorlib.resources.dll" location="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_fr_b77a5c561934e089\mscorlib.resources.dll" fileVersion="4.6.1055.0 built by: NETFXREL2" productVersion="4.6.1055.0" />
@@ -34,8 +35,9 @@
     <variable name="CF_BUILD_CONFIGURATION" value="RELEASE" />
   </variables>
   <generatedFiles>
-    <producer name="Business Object Model (BOM)" generatedFilesCount="6" />
+    <producer name="Business Object Model (BOM)" generatedFilesCount="18" />
     <producer name="SQL Server" generatedFilesCount="8" />
+    <producer name="Asp.Net Identity" generatedFilesCount="0" />
   </generatedFiles>
   <project>
     <imports>
@@ -47,7 +49,7 @@
     </parts>
   </project>
   <producer name="Business Object Model (BOM)">
-    <event type="ProducerStart" elapsedTime="00:00:00.0002701">
+    <event type="ProducerStart" elapsedTime="00:00:00.0019610">
       <name>Business Object Model (BOM)</name>
       <instance>CodeFluent.Model.Producer</instance>
     </event>
@@ -104,64 +106,144 @@
     <event type="ParameterValue" name="RuntimePrefix" value="_cf_rt" />
     <event type="ParameterValue" name="RuntimeResourceBaseName" value="ModelCodeFluent.ModelCodeFluent" />
     <event type="ParameterValue" name="FullTargetDirectory" value="C:\Users\olivier\Source\Repos\mvccodefluent\Model" />
-    <event type="FileWrite" elapsedTime="00:00:00.7213490">
+    <event type="FileWrite" elapsedTime="00:00:01.1264206">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\_cf_rt.cs</path>
       <fileType>RuntimeCode</fileType>
-      <size>8622</size>
+      <size>8626</size>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0237497">
+    <event type="FileWrite" elapsedTime="00:00:00.0325295">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\_cf_rt.cs</path>
-      <size>8622</size>
+      <size>8626</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0251621">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0322072">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\_cf_rt.cs</path>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0199677">
+    <event type="FileWrite" elapsedTime="00:00:00.1635799">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\ModelCodeFluent.ResX</path>
       <fileType>Embedded resource for Langue indifférente (Pays indifférent) culture</fileType>
       <size>5911</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0125531">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0158181">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\ModelCodeFluent.ResX</path>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0326160">
+    <event type="FileWrite" elapsedTime="00:00:00.0362139">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\Role.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.Role'</fileType>
+      <size>37021</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0058535">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\Role.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0247134">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\RoleClaim.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.RoleClaim'</fileType>
+      <size>36316</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0053380">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\RoleClaim.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0373134">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\RoleClaimCollection.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.RoleClaimCollection'</fileType>
+      <size>47490</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0035824">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\RoleClaimCollection.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0233801">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\RoleCollection.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.RoleCollection'</fileType>
+      <size>47125</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0049180">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\RoleCollection.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0313728">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\User.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.User'</fileType>
+      <size>63734</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034233">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\User.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0171310">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserClaim.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.UserClaim'</fileType>
+      <size>38996</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0057919">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserClaim.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0246393">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserClaimCollection.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.UserClaimCollection'</fileType>
+      <size>47490</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0051008">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserClaimCollection.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0234559">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserCollection.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.UserCollection'</fileType>
+      <size>47189</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031869">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserCollection.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0255862">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserLogin.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.UserLogin'</fileType>
+      <size>37768</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0066909">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserLogin.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0244256">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserLoginCollection.cs</path>
+      <fileType>BaseTypeFile for 'ModelCodeFluent.Identity.UserLoginCollection'</fileType>
+      <size>47490</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0096321">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Identity\UserLoginCollection.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0216241">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Vehicle.cs</path>
       <fileType>BaseTypeFile for 'ModelCodeFluent.Vehicle'</fileType>
-      <size>29587</size>
+      <size>29589</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0039724">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0127561">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Vehicle.cs</path>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0340804">
+    <event type="FileWrite" elapsedTime="00:00:00.0214603">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\VehicleCollection.cs</path>
       <fileType>BaseTypeFile for 'ModelCodeFluent.VehicleCollection'</fileType>
-      <size>38226</size>
+      <size>38228</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0034736">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0031854">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\VehicleCollection.cs</path>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0340455">
+    <event type="FileWrite" elapsedTime="00:00:00.0340281">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\HttpHandler.cs</path>
-      <size>1594</size>
+      <size>1596</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0193592">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0069609">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\HttpHandler.cs</path>
     </event>
     <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.MembershipProviderProducer: No directoryUser entity. Skip production." />
     <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.RoleProviderProducer: No directoryRole entity. Skip production." />
     <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.ProfileProviderProducer: No directoryUser entity. Skip production." />
     <event type="Information" message="CodeFluent.Producers.CodeDom.UI.Web.BasicAuthenticationModuleProducer: No directoryUser entity. Skip production." />
-    <event type="FileWrite" elapsedTime="00:00:00.0862540">
+    <event type="FileWrite" elapsedTime="00:00:00.0867131">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\BitsServer.cs</path>
       <fileType>CodeFluent.Producers.CodeDom.UI.Web.BitsServerProducer</fileType>
-      <size>4005</size>
+      <size>4007</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0087586">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0046430">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\BitsServer.cs</path>
     </event>
   </producer>
   <producer name="SQL Server">
-    <event type="ProducerStart" elapsedTime="00:00:00.0180208">
+    <event type="ProducerStart" elapsedTime="00:00:00.0123409">
       <name>SQL Server</name>
       <instance>CodeFluent.Model.Producer</instance>
     </event>
@@ -209,139 +291,165 @@
     <event type="ParameterValue" name="SaveUserName" value="SYSTEM_USER" />
     <event type="ParameterValue" name="StoreName" />
     <event type="ParameterValue" name="TargetVersion" value="Default" valueType="CodeFluent.Producers.SqlServer.TargetVersion" />
-    <event type="FileCopy" elapsedTime="00:00:00.0526402">
+    <event type="FileCopy" elapsedTime="00:00:00.0682814">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_runtime.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_runtime.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0115016">
+    <event type="FileWrite" elapsedTime="00:00:00.0100576">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_runtime.sql</path>
       <fileType>RuntimeScript</fileType>
-      <size>1961</size>
+      <size>1962</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0002188">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000876">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_runtime.sql</path>
     </event>
     <event type="ParameterValue" name="SqlServerVersion" value="12.0.2000.8" />
-    <event type="FileCopy" elapsedTime="00:00:00.6848903">
+    <event type="FileCopy" elapsedTime="00:00:02.2892612">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_tables.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_tables.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0066860">
+    <event type="FileWrite" elapsedTime="00:00:00.0071574">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_tables.sql</path>
       <fileType>TablesScript</fileType>
-      <size>1181</size>
+      <size>14493</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001923">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001200">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_tables.sql</path>
     </event>
-    <event type="FileCopy" elapsedTime="00:00:00.0276761">
+    <event type="FileCopy" elapsedTime="00:00:00.0416172">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_views.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_views.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0037414">
+    <event type="FileWrite" elapsedTime="00:00:00.0048838">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_views.sql</path>
       <fileType>ViewsScript</fileType>
-      <size>614</size>
+      <size>3523</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000527">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000923">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_views.sql</path>
     </event>
-    <event type="FileCopy" elapsedTime="00:00:00.1634833">
+    <event type="FileCopy" elapsedTime="00:00:00.0972703">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_table_diffs.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_table_diffs.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0052700">
+    <event type="FileWrite" elapsedTime="00:00:00.0062474">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_table_diffs.sql</path>
       <fileType>TablesDiffsScript</fileType>
-      <size>1938</size>
+      <size>15345</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000995">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000765">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_table_diffs.sql</path>
     </event>
-    <event type="FileCopy" elapsedTime="00:00:00.0653577">
+    <event type="FileCopy" elapsedTime="00:00:00.1220245">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_procedures.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_procedures.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0084190">
+    <event type="FileWrite" elapsedTime="00:00:00.0043250">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_procedures.sql</path>
       <fileType>ProceduresScript</fileType>
-      <size>4947</size>
+      <size>44871</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0008258">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000652">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_procedures.sql</path>
     </event>
-    <event type="FileCopy" elapsedTime="00:00:00.0152838">
+    <event type="FileCopy" elapsedTime="00:00:00.0171155">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_drop.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_drop.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0038050">
+    <event type="FileWrite" elapsedTime="00:00:00.0052065">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_drop.sql</path>
       <fileType>RelationsDropScript</fileType>
-      <size>192</size>
+      <size>1785</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000567">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000907">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_drop.sql</path>
     </event>
-    <event type="FileCopy" elapsedTime="00:00:00.0074385">
+    <event type="FileCopy" elapsedTime="00:00:00.0206675">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_add.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_add.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0071909">
+    <event type="FileWrite" elapsedTime="00:00:00.0054239">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_add.sql</path>
       <fileType>RelationsAddScript</fileType>
-      <size>192</size>
+      <size>1382</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0002556">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0001685">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_add.sql</path>
     </event>
-    <event type="FileCopy" elapsedTime="00:00:00.0250409">
+    <event type="FileCopy" elapsedTime="00:00:00.0379966">
       <target>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_instances.sql</target>
       <source>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_instances.sql.tmp</source>
     </event>
-    <event type="FileWrite" elapsedTime="00:00:00.0054808">
+    <event type="FileWrite" elapsedTime="00:00:00.0066118">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_instances.sql</path>
       <fileType>InstancesScript</fileType>
-      <size>266</size>
+      <size>268</size>
     </event>
-    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000564">
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0000870">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_instances.sql</path>
     </event>
-    <event type="FileExecute" elapsedTime="00:00:00.0038539">
+    <event type="FileExecute" elapsedTime="00:00:00.0064497">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_runtime.sql</path>
       <fileType>RuntimeScript</fileType>
-      <size>1961</size>
+      <size>1962</size>
     </event>
-    <event type="FileExecute" elapsedTime="00:00:00.1266435">
+    <event type="FileExecute" elapsedTime="00:00:00.0244152">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_drop.sql</path>
       <fileType>RelationsDropScript</fileType>
-      <size>192</size>
+      <size>1785</size>
     </event>
-    <event type="FileExecute" elapsedTime="00:00:00.0152797">
+    <event type="FileExecute" elapsedTime="00:00:00.0321111">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_table_diffs.sql</path>
       <fileType>TablesDiffScript</fileType>
-      <size>1938</size>
+      <size>15345</size>
     </event>
-    <event type="FileExecute" elapsedTime="00:00:00.0250869">
+    <event type="FileExecute" elapsedTime="00:00:00.1060114">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_views.sql</path>
       <fileType>ViewsScript</fileType>
-      <size>614</size>
+      <size>3523</size>
     </event>
-    <event type="FileExecute" elapsedTime="00:00:00.0186127">
+    <event type="FileExecute" elapsedTime="00:00:00.0463726">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_relations_add.sql</path>
       <fileType>RelationsAddScript</fileType>
-      <size>192</size>
+      <size>1382</size>
     </event>
-    <event type="FileExecute" elapsedTime="00:00:00.0024198">
+    <event type="FileExecute" elapsedTime="00:00:00.0225154">
       <path>C:\Users\olivier\Source\Repos\mvccodefluent\Persistence\ModelCodeFluent_procedures.sql</path>
       <fileType>ProceduresScript</fileType>
-      <size>4947</size>
+      <size>44871</size>
     </event>
-    <event type="ProducerTerminate" elapsedTime="00:00:00.0860556">
+  </producer>
+  <producer name="Asp.Net Identity">
+    <event type="ProducerStart" elapsedTime="00:00:00.3934639">
+      <name>Asp.Net Identity</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.1475273">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\Security\UserStore.cs</path>
+      <fileType>SoftFluent.AspNetIdentity.UserStoreProducer</fileType>
+      <size>47492</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0036103">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\Security\UserStore.cs</path>
+    </event>
+    <event type="FileWrite" elapsedTime="00:00:00.0310932">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\Security\RoleStore.cs</path>
+      <fileType>SoftFluent.AspNetIdentity.RoleStoreProducer</fileType>
+      <size>5912</size>
+    </event>
+    <event type="AddToGeneratedFiles" elapsedTime="00:00:00.0085067">
+      <path>C:\Users\olivier\Source\Repos\mvccodefluent\Model\Web\Security\RoleStore.cs</path>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0061273">
       <name>Business Object Model (BOM)</name>
       <instance>CodeFluent.Model.Producer</instance>
     </event>
-    <event type="ProducerTerminate" elapsedTime="00:00:00.0008258">
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0005554">
       <name>SQL Server</name>
+      <instance>CodeFluent.Model.Producer</instance>
+    </event>
+    <event type="ProducerTerminate" elapsedTime="00:00:00.0001206">
+      <name>Asp.Net Identity</name>
       <instance>CodeFluent.Model.Producer</instance>
     </event>
   </producer>
