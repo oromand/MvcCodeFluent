@@ -99,7 +99,7 @@ namespace MvcCodeFluent
 
         public override Task<ClaimsIdentity> CreateUserIdentityAsync(User user)
         {
-            //return user.GenerateUserIdentityAsync((UserManager)UserManager);
+            return user.GenerateUserIdentityAsync((UserManager)UserManager);
             return null;
         }
 

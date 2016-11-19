@@ -65,6 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Identity\Extends\User.cs" />
     <Compile Include="Identity\Role.cs">
       <CodeFluentProducer>5558f17b43c56c280bcf62d38039478c</CodeFluentProducer>
     </Compile>
