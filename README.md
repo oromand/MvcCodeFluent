@@ -13,3 +13,8 @@ We integrated CodeTemplates folder so that you can generate Controller using the
 ## View
 
 View have been customized. Standard CFE properties have been taken into account while generating views (EntityState, RaisePropertyChangedEvents and RowVersion when needed)
+
+## Build & Run
+
+SQL Producer is defaulting to MSSql in localhost. 
+Set up your web.config and the producer connection string accordingly to run the solution
